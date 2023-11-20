@@ -4,7 +4,7 @@ const phone = document.querySelector('.phone');
 const submitApplicationBtn = document.querySelectorAll('.submit-application');
 const modalSubmit = document.querySelector('#modal-submit');
 const phoneTxt = document.querySelector('.phone__txt');
-const flag = document.querySelector('.iti__selected-flag');
+const flags = document.querySelectorAll('.iti__selected-flag');
 
 let num1 = 0;
 
@@ -29,9 +29,12 @@ phone.addEventListener('input', function(){
   }
 });
 
-flag.addEventListener('click', function(){
-  phone.value = '';
-});
+for(let flag of flags){
+  flag.addEventListener('click', function(){
+    phone.value = '';
+    console.log(phone.value);
+  });
+}
 
 
 for (let btn of submitApplicationBtn) {

@@ -6,7 +6,7 @@ const form = document.querySelector('#trial__form');
 const done = document.querySelector('#trial__done');
 const phoneTrial = document.querySelector('#phone__trial');
 const modalBtn = document.querySelector('#trial__btn');
-const flagTrial = document.querySelector('.iti__selected-flag');
+const flagTrial = document.querySelectorAll('.iti__selected-flag');
 const trialTxt = document.querySelector('#phone__txt-trial');
 const modalOverlay = document.querySelector('#modal-overlay');
 
@@ -61,9 +61,11 @@ phoneTrial.addEventListener('input', function(){
   }
 });
 
-flagTrial.addEventListener('click', function(){
-  phoneTrial.value = '';
-});
+for(flag of flagTrial){
+  flag.addEventListener('click', function(){
+    phoneTrial.value = '';
+  });
+}
 
 modalBtn.addEventListener('click', function(e){
   e.preventDefault();

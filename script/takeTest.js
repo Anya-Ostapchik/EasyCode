@@ -6,7 +6,7 @@ const modal1 = document.querySelector('#modal__take-test');
 const modal2 = document.querySelector('#modal__take-test_2');
 const phoneTake = document.querySelector('#phone__take');
 const close1 = document.querySelector('#modal-close_1');
-const flagTake = document.querySelector('.iti__selected-flag');
+const flagsTake = document.querySelectorAll('.iti__selected-flag');
 const takeTxt = document.querySelector('#phone__txt-take');
 const age = document.querySelector('.take-test__age');
 const checks = document.querySelectorAll('.modal-take__check');
@@ -72,9 +72,11 @@ phoneTake.addEventListener('input', function(){
   }
 });
 
-flagTake.addEventListener('click', function(){
+for(flag of flagsTake){
+  flag.addEventListener('click', function(){
     phoneTake.value = '';
-});
+  });
+}
 
 modal2Btn.addEventListener('click', function(e){
   e.preventDefault();
