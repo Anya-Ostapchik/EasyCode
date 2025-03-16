@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/courses.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Курсы программирования</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-container">
+            <ul class="menu">
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/html/about.html">О нас</a></li>
+                <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
+                <li><a href="/index.html#answers">FAQ</a></li>
+                <li><a href="/index.html#reviews">Отзывы</a></li>
+                <li><a href="/index.html#modal-submit">Контакты</a></li>
+            </ul>
+            <ul class="submenu-container">
+              
+                <li class="dropdown">
+                    <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#">Основы программирования (Python, JavaScript, C#)</a></li>
+                        <li><a href="#">Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a></li>
+                        <li><a href="#">Анализ данных и машинное обучение</a></li>
+                        <li><a href="#">Автоматизация и DevOps</a></li>
+                        <li><a href="#">Разработка мобильных приложений</a></li>
+                        <li><a href="#">Кибербезопасность и ПО</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/html/courseskid.html">Курсы для детей ▾</a>
+                    <ul class="submenu">
+                        <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+                    <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+                    <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                    <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                    <li><a href="/html/python.html">Программирование на Python</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            ☰
+        </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+          let menu = document.querySelector(".menu-container");
+          let body = document.querySelector("body");
+          menu.classList.toggle("active");
+          if (menu.classList.contains("active")) {
+              body.style.overflow = "hidden";
+          } else {
+              body.style.overflow = "auto";
+          }
+      }
+  </script>
+      
+    <div class="modal-overlay modal_closed" id="modal-overlay"></div>
+    <div class="modal-submit modal_closed" id="modal-submit">
+        <svg>
+            <use href="/sprite.svg#check"></use>
+        </svg>
+        <p>Спасибо! Данные успешно отправлены.</p>
+    </div>
+    
+    <a href="#" class="modal-trial-lesson__close modal_closed" id="modal-close" title="Закрыть модальное окно">x</a>
+
+    <div class="modal-trial-lesson modal_closed" id="modal-trial-lesson">
+        <h2 class="modal-trial-lesson__title">Запишитесь на <span class="blue">бесплатный</span> урок</h2>
+        <p class="modal-trial-lesson__txt_1">Оставьте заявку и наши менеджеры согласуют с Вами удобное время</p>
+
+        <form action="" method="post" id="trial__form">
+            <input class="modal-trial-lesson__input" type="text" id="name" placeholder="Как вас зовут?">
+            <input class="modal-trial-lesson__input" type="tel" id="phone__trial" name="request">
+            <span class="phone__txt-trial phone__txt_del" id="phone__txt-trial">*Введите корректный номер телефона</span>
+            <button class="modal-trial-lesson__btn submit-trial-lesson" id="trial__btn" type="submit">Записаться на бесплатный урок</button>
+        </form>
+
+        <div class="modal-trial-lesson__done done_close" id="trial__done">
+            Спасибо! Данные успешно отправлены.
+        </div>
+
+        <p class="modal-trial-lesson__txt_2">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a></p>
+    </div>
+    <div class="main__link first-section">
+        <a href="/index.html">Главная </a>/<a href="#"> Курсы программирования</a>
+    </div>
+    <section class="main">
+        <div class="main__wrap">
+            <div class="main__content">
+                <div class="main__desk">
+                    <h2 class="main__title">КУРСЫ ПРОГРАММИРОВАНИЯ ДЛЯ ДЕТЕЙ 7-17 ЛЕТ</h2>
+                </div>
+                <div class="main__img">
+                    <svg>
+                        <use href="/sprite.svg#courses"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content">
+        <nav class="nav">            
+            <ul class="nav__list">
+                <li class="active"><a class="nav__link" href="#">Все курсы</a></li>
+                <li><a class="nav__link" href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+                <li><a class="nav__link" href="/html/gameJunior.html">Разработка игр Junior</a></li>
+                <li><a class="nav__link" href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                <li><a class="nav__link" href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                <li><a class="nav__link" href="/html/python.html">Программирование на Python</a></li>
+            </ul>
+        </nav>
+        <section class="courses">
+            <svg class="courses__bg_left">
+                <use href="/sprite.svg#bg_left"></use>
+            </svg>
+            <svg  class="courses__bg_right">
+                <use href="/sprite.svg#bg_left"></use>
+            </svg>
+            <h2 class="courses__title">Какие есть курсы?</h2>
+            <div class="courses__blocks">
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_1"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Разработка сайтов</h4>
+                        <p>Cоздание веб-сайта или веб-приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера.</p>
+                        <a class="courses__block-link" href="/html/websiteDevelopment.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a class="courses__block-link" href="/html/projects.html">ПРОЕКТЫ НАШИХ УЧЕНИКОВ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_2"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Разработка игр Junior</h4>
+                        <p>Разработка игр Junior предназначена в первую очередь для того, чтобы обучить основам построения алгоритмов и для увеличения мотивации ученика изучать программирование.</p>
+                        <a class="courses__block-link" href="/html/gameJunior.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a class="courses__block-link" href="/html/projects.html">ПРОЕКТЫ НАШИХ УЧЕНИКОВ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_3"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Разработка игр Middle</h4>
+                        <p>Разработка игр Middle предназначена в первую очередь для того, чтобы обучить основам построения алгоритмов и для увеличения мотивации ученика изучать программирование.</p>
+                        <a class="courses__block-link" href="/html/gameMiddle.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a class="courses__block-link" href="/html/projects.html">ПРОЕКТЫ НАШИХ УЧЕНИКОВ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_4"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Разработка игр Senior</h4>
+                        <p>В этом направлении мы сделали упор на создании проектов. Мы начнем с основ и на примере интересных проектов будем постепенно писать собственные игры, а модели, которые будут использоваться в них создадим самостоятельно в Blender.</p>
+                        <a class="courses__block-link" href="/html/gameSenior.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a class="courses__block-link" href="/html/projects.html">ПРОЕКТЫ НАШИХ УЧЕНИКОВ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_5"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Программирование на Python</h4>
+                        <p>За время курса ребята создадут несколько собственных проектов и попробуют себя в роли наиболее востребованных IT-специалистов — от разработчиков игр до специалистов по машинному обучению.</p>
+                        <a class="courses__block-link" href="/html/python.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a class="courses__block-link" href="/html/projects.html">ПРОЕКТЫ НАШИХ УЧЕНИКОВ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why-courses">
+            <div class="why-courses__grid">
+                <h2 class="grid__title">Почему еще в детстве стоит познакомить ребенка ближе с миром IT?</h2>
+                <div class="grid__blocks">
+                    <div class="grid__block">
+                        <div class="grid__block-container">
+                            <div>
+                                <svg>
+                                    <use href="/sprite.svg#three_1"></use>
+                                </svg>
+                            </div>
+                            <h4>Ваш ребенок выучит основы английского языка</h4>
+                        </div>
+                        <p>Обучение проходит на русском языке, чтобы Вашему ребенку было проще, при этом подготавливаем детей к изучению английского языка.</p>
+                    </div>
+                    <div class="grid__block">
+                        <div class="grid__block-container">
+                            <div>
+                                <svg>
+                                    <use href="/sprite.svg#three_2"></use>
+                                </svg>
+                            </div>                            
+                            <h4>Получение самых важных навыков для разработчика</h4>
+                        </div>                        
+                        <p>Во время курса дети обучаются созданию игр, вебсайтов и приложений. Осваивают языки программирования такие, как Python, Lua, c#, C++.</p>
+                    </div>
+                    <div class="grid__block">
+                        <div class="grid__block-container">
+                            <div>
+                                <svg>
+                                    <use href="/sprite.svg#three_3"></use>
+                                </svg>
+                            </div>                            
+                            <h4>Комплексное развитие ребенка</h4>
+                        </div>                        
+                        <p>Ребенок получит комплексное развитие и помимо навыков программирования освоит логику, дизайнерское мышление и улучшит внимание и знания по математике.</p>
+                    </div>
+                    <div class="grid__block">
+                        <div class="grid__block-container">
+                            <div>
+                                <svg>
+                                    <use href="/sprite.svg#three_4"></use>
+                                </svg>
+                            </div>                            
+                            <h4>Получение навыков общения в команде</h4>
+                        </div>                        
+                        <p>Занятия проходят в небольших группах. Ваш ребенок обретет друзей и единомышленников. Научится находить общий язык с другими людьми.</p>
+                    </div>
+                    <div class="grid__block">
+                        <div class="grid__block-container">
+                            <div>
+                                <svg>
+                                    <use href="/sprite.svg#three_5"></use>
+                                </svg>
+                            </div>                            
+                            <h4>Ваш ребенок получит сертификат</h4>
+                        </div>                        
+                        <p>После окончания обучения Ваш ребенок получит сертификат, в котором будут перечислены освоенные им в ходе курса.все языки программирования.</p>
+                    </div>
+                    <div class="grid__block">
+                        <div class="grid__block-container">
+                            <div>
+                                <svg>
+                                    <use href="/sprite.svg#three_6"></use>
+                                </svg>
+                            </div>                            
+                            <h4>Лучшие специалисты IT-отрасли</h4>
+                        </div>                        
+                        <p>Все наши учителя - практики, которые работают в лучших IT-компаниях и знают, какие навыки действительно востребованы!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="why-courses__blue">
+                <div class="why-courses__grid-content">
+                    <h2 class="blue__title">Успейте записаться на бесплатное пробное занятие с IT-преподавателем</h2>
+                    <p class="blue__txt">Мы покажем нашу работу изнутри, для понимания как будет проходить обучение</p>
+                    <div class="blue__grid">
+                        <div class="blue__grid-elem">
+                            <div class="blue__grid-block_1">
+                                <span>1</span>
+                                <h4>Увлекательное занятие в игровой форме с ведущим преподавателем</h4>
+                            </div>
+                            <p>После того, как определим склонность ученика к одной из областей сферы IT, мы совместно с ребенком создадим первый проект в рамках выбранной специальности!</p>
+                            <div class="blue__grid-block_2">
+                                <p>Стоимость часа занятий:</p>
+                                <span class="line-through grey">1020 руб</span>
+                                <span>0 руб</span>
+                            </div>
+                        </div>
+                        <div class="blue__grid-elem">
+                            <div class="blue__grid-block_1">
+                                <span>2</span>
+                                <h4>Узнаете о способностях вашего ребенка</h4>
+                            </div>
+                            <ul>
+                                <li>Поймете, подходит ли Вашему ребенку программирование
+                                </li>
+                                <li>Познакомитесь с преподавателем
+                                </li>
+                                <li>Получите индивидуальную консультацию и анализ текущих навыков и возможностей ребенка
+                                </li>
+                            </ul>
+                            <div class="blue__grid-block_2">
+                                <p>Стоимость консультации:</p>
+                                <span class="line-through grey">500 руб</span>
+                                <span>0 руб</span>
+                            </div>
+                        </div>
+                        <div class="blue__grid-elem">
+                            <div class="blue__grid-block_1">
+                                <span>3</span>
+                                <h4>Ребенок создаст свой первый проект</h4>
+                            </div>
+                            <img src="/imgs/three1.jpg" alt="">
+                            <div class="blue__grid-block_2">
+                                <p>Цена материалов:</p>
+                                <span class="line-through grey">500 руб</span>
+                                <span>0 руб</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-courses__trial-lesson">
+                    <div class="trial-lesson__img">
+                        <img src="/imgs/three2.png" alt="">
+                    </div>
+                    <div class="trial-lesson__desk">
+                        <p class="trial-lesson__title">Запишитесь на пробное занятие* и получите это:</p>
+                        <p class="trial-lesson__price">Общая цена: <span class="trial-lesson__price_big">2020 руб.</span></p>
+                        <p class="trial-lesson__free">БЕСПЛАТНО</p>
+                    </div>
+                    <div class="trial-lesson__btn">
+                        <a href="#" class="trial-lesson">Записаться</a>
+                        <p class="trial-lesson__txt">*количество мест ограничено</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lessons-how">
+            <h2>Как проходят занятия?</h2>
+            <div class="lessons-how__grid">
+                <div class="lessons-how__grid-elem">
+                    <svg>
+                        <use href="/sprite.svg#fore_1"></use>
+                    </svg>
+                    <div class="lessons-how__grid-elem_txt">
+                        <h4>Мини-группы от 6 человек</h4>
+                        <p>Дети в ходе обучения будут соревноваться, совместно создавать проекты и развивать навыки общения.</p>
+                    </div>                    
+                </div>
+                <div class="lessons-how__grid-elem">
+                    <svg>
+                        <use href="/sprite.svg#fore_2"></use>
+                    </svg>
+                    <div class="lessons-how__grid-elem_txt">
+                        <h4>Длительность уроков 90 минут</h4>
+                        <p>Также предусмотрены два перерыва по 5 минут, во время которых мы общаемся и проводим викторины.</p>
+                    </div>
+                    
+                </div>
+                <div class="lessons-how__grid-elem">
+                    <svg>
+                        <use href="/sprite.svg#fore_3"></use>
+                    </svg>
+                    <div class="lessons-how__grid-elem_txt">
+                        <h4>Занятия в удобное время</h4>
+                        <p>Время проведения каждого урока согласовывается с Вами заранее. Уроки проходят в удобное Вам и Вашему ребенку время.</p>
+                    </div>
+
+                    
+                </div>
+                <div class="lessons-how__grid-elem">
+                    <svg>
+                        <use href="/sprite.svg#fore_4"></use>
+                    </svg>
+                    <div class="lessons-how__grid-elem_txt">
+                        <h4>Ребенок сам захочет учиться</h4>
+                        <p>Каждое занятие безумно интересное и увлекательное. Вам не придется заставлять учиться Вашего ребенка - ему это будет нравиться!</p>
+                    </div>
+
+                    
+                </div>
+                <div class="lessons-how__grid-elem">
+                    <svg>
+                        <use href="/sprite.svg#fore_5"></use>
+                    </svg>
+                    <div class="lessons-how__grid-elem_txt">
+                        <h4>Персональные уроки 1 на 1</h4>
+                        <p>Индивидуальный подход к обучению по проверенным программам. Уроки от 50 до 90 минут.</p>
+                    </div>
+
+                    
+                </div>
+                <div class="lessons-how__grid-elem">
+                    <svg>
+                        <use href="/sprite.svg#fore_6"></use>
+                    </svg>
+                    <div class="lessons-how__grid-elem_txt">
+                        <h4>Для нас все ученики одинаковы</h4>
+                        <p>Мы не выбираем любимчиков. Для тех ребят, кто не понял темы, мы занимаемся на доп часе, чтобы закрепить материал лучше.</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <h2 class="reviews__title">Отзывы родителей</h2>
+            <div class="swiper-par__btn">
+                <div class="swiper swiper-parent">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__wrap">
+                                <div class="swiper-item__par">
+                                    <div class="swiper__name">
+                                        <img src="/imgs/parent.webp" alt="">
+                                        <div class="swiper__parent">
+                                            <p>Валерия Рытова</p>
+                                            <span>20 мая 2022 года</span>
+                                        </div>
+                                    </div>
+                                    <p>Добрый день! Хочу выразить огромную благодарность создателям и сотрудникам данной школы. Мой сын просто в восторге! Это не просто кружок для «занятия детей», это школа где дают реальные знания. Я вижу заинтересованность моего ребёнка и думаю, что это отличный старт для его будущего.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__wrap">
+                                <div class="swiper-item__par">
+                                    <div class="swiper__name">
+                                        <img src="/imgs/parent.webp" alt="">
+                                        <div class="swiper__parent">
+                                            <p>Валерия Рытова</p>
+                                            <span>20 мая 2022 года</span>
+                                        </div>
+                                    </div>
+                                    <p>Добрый день! Хочу выразить огромную благодарность создателям и сотрудникам данной школы. Мой сын просто в восторге! Это не просто кружок для «занятия детей», это школа где дают реальные знания. Я вижу заинтересованность моего ребёнка и думаю, что это отличный старт для его будущего.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__wrap">
+                                <div class="swiper-item__par">
+                                    <div class="swiper__name">
+                                        <img src="/imgs/parent.webp" alt="">
+                                        <div class="swiper__parent">
+                                            <p>Валерия Рытова</p>
+                                            <span>20 мая 2022 года</span>
+                                        </div>
+                                    </div>
+                                    <p>Добрый день! Хочу выразить огромную благодарность создателям и сотрудникам данной школы. Мой сын просто в восторге! Это не просто кружок для «занятия детей», это школа где дают реальные знания. Я вижу заинтересованность моего ребёнка и думаю, что это отличный старт для его будущего.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__wrap">
+                                <div class="swiper-item__par">
+                                    <div class="swiper__name">
+                                        <img src="/imgs/parent.webp" alt="">
+                                        <div class="swiper__parent">
+                                            <p>Валерия Рытова</p>
+                                            <span>20 мая 2022 года</span>
+                                        </div>
+                                    </div>
+                                    <p>Добрый день! Хочу выразить огромную благодарность создателям и сотрудникам данной школы. Мой сын просто в восторге! Это не просто кружок для «занятия детей», это школа где дают реальные знания. Я вижу заинтересованность моего ребёнка и думаю, что это отличный старт для его будущего.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__wrap">
+                                <div class="swiper-item__par">
+                                    <div class="swiper__name">
+                                        <img src="/imgs/parent.webp" alt="">
+                                        <div class="swiper__parent">
+                                            <p>Валерия Рытова</p>
+                                            <span>20 мая 2022 года</span>
+                                        </div>
+                                    </div>
+                                    <p>Добрый день! Хочу выразить огромную благодарность создателям и сотрудникам данной школы. Мой сын просто в восторге! Это не просто кружок для «занятия детей», это школа где дают реальные знания. Я вижу заинтересованность моего ребёнка и думаю, что это отличный старт для его будущего.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prev__par"></div>
+                <div class="next__par"></div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__content">
+                <div class="about__img">
+                    <img src="/imgs/about.jpg" alt="">
+                </div>
+                <div class="about__desk">
+                    <div class="about__content_save">
+                        <h3 class="about__title">О школе</h3>
+                        <p class="about__text">Обучаем детей новым трендовым профессиям в области программирования и вместе с родителями создаем для них лучшее будущее!</p>
+                    </div>
+                    <div class="about__block_delete">
+                        <h3 class="about__title">Наша миссия</h3>
+                        <p class="about__text">Показать детям и родителям, что образование может быть интересным, увлекательным, при этом наиболее качественным, чем то, что нам предлагают школы и университеты.</p><br>
+                        <p class="about__text">Мы покажем Вашему ребенку, что учиться - это круто! Успеваемость Вашего ребенка вырастет, а время за компьютером он начнет проводить с пользой!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about__block_min">
+                <h3 class="about__title">Наша миссия</h3>
+                <p class="about__text">Показать детям и родителям, что образование может быть интересным, увлекательным, при этом наиболее качественным, чем то, что нам предлагают школы и университеты.</p><br>
+                <p class="about__text">Мы покажем Вашему ребенку, что учиться - это круто! Успеваемость Вашего ребенка вырастет, а время за компьютером он начнет проводить с пользой!</p>
+            </div>
+        </section>
+        <section class="request">
+            <div class="request__imgDesk">
+                <svg>
+                    <use href="/sprite.svg#request"></use>
+                </svg>
+                <h2>Записаться на бесплатное занятие проще простого</h2>
+                <p>Уже на первом занятии погрузим в азы разработки и сделаем небольшой проект, от которого ребенок будет в восторге!</p>
+            </div>
+            <div class="request__form">
+                <h2>Оставьте заявку</h2>
+                <p class="request__desc">и забронируйте место<br>на бесплатный урок</p>
+                <form class="request__form-f" action="" method="post">
+                    <label for="name">Как Вас зовут?</label>
+                    <input  type="text" id="name" placeholder="Имя Фамилия">
+                    <label for="phone"> Ваш номер телефона</label>
+                    <input class="phone" type="tel" id="phone" name="request">
+                    <span class="phone__txt phone__txt_del">*Введите корректный номер телефона</span>
+                    <button class="request__btn submit-application" type="submit">Оставить заявку</button>
+                </form>
+                <p class="request__txt">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a></p>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Курсы для взрослых</h3>
+            <ul class="footer-menu">
+              <li>
+                <a href="#">Основы программирования (Python, JavaScript, C#)</a>
+              </li>
+              <li>
+                <a href="#"
+                  >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
+                >
+              </li>
+              <li><a href="#">Анализ данных и машинное обучение</a></li>
+              <li><a href="#">Автоматизация и DevOps</a></li>
+              <li><a href="#">Разработка мобильных приложений</a></li>
+              <li><a href="#">Кибербезопасность и ПО</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Курсы для детей</h3>
+            <ul class="footer-menu">
+              <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+                    <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+                    <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                    <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                    <li><a href="/html/python.html">Программирование на Python</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Общие страницы</h3>
+            <ul class="footer-menu">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/html/about.html">О нас</a></li>
+              
+              <li><a href="/index.html#contact">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiperParents = new Swiper('.swiper-parent', {
+            navigation: {
+                nextEl: '.next__par',
+                prevEl: '.prev__par',
+            },
+            slidesPerView: '2.2',
+            spaceBetween: 30,
+            speed: 1000,
+            breakpoints: {
+                300: {
+                    slidesPerView: '1',
+                },
+                640: {
+                    slidesPerView: '2',
+                },
+                960: {
+                    slidesPerView: '2.2',
+                }
+            }
+        });
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            preferredCountries: ["ru", "by", "kz"],
+            autoInsertDialCode: true,
+            nationalMode: false,
+            utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+        const phoneInputField1 = document.querySelector("#phone__trial");
+        const phoneInput1 = window.intlTelInput(phoneInputField1, {
+            preferredCountries: ["ru", "by", "kz"],
+            autoInsertDialCode: true,
+            nationalMode: false,
+            utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+    <script src="/script/submitApplication.js"></script>
+    <script src="/script/trialLesson.js"></script>
+</body>
+</html>

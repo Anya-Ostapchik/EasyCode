@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/projects.css">
+    <title>Проекты по разработке игр Senior</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-container">
+            <ul class="menu">
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/html/about.html">О нас</a></li>
+                <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
+                <li><a href="/index.html#answers">FAQ</a></li>
+                <li><a href="/index.html#reviews">Отзывы</a></li>
+                <li><a href="/index.html#modal-submit">Контакты</a></li>
+            </ul>
+            <ul class="submenu-container">
+              
+                <li class="dropdown">
+                    <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#">Основы программирования (Python, JavaScript, C#)</a></li>
+                        <li><a href="#">Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a></li>
+                        <li><a href="#">Анализ данных и машинное обучение</a></li>
+                        <li><a href="#">Автоматизация и DevOps</a></li>
+                        <li><a href="#">Разработка мобильных приложений</a></li>
+                        <li><a href="#">Кибербезопасность и ПО</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/html/courseskid.html">Курсы для детей ▾</a>
+                    <ul class="submenu">
+                        <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+                    <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+                    <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                    <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                    <li><a href="/html/python.html">Программирование на Python</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            ☰
+        </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+          let menu = document.querySelector(".menu-container");
+          let body = document.querySelector("body");
+          menu.classList.toggle("active");
+          if (menu.classList.contains("active")) {
+              body.style.overflow = "hidden";
+          } else {
+              body.style.overflow = "auto";
+          }
+      }
+  </script>
+      
+    <div class="main__link first-section">
+        <a href="/index.html">Главная </a>/<a href="#"> Проекты по разработке игр Senior</a>
+    </div>
+    <section class="main">
+        <div class="main__wrap">
+            <div class="main__content">
+                <div class="main__desk">
+                    <h2 class="main__title">ПРОЕКТЫ НАШИХ УЧЕНИКОВ</h2>
+                </div>
+                <div class="main__img">
+                    <svg>
+                        <use href="/sprite.svg#projects"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content">
+        <nav class="nav">            
+            <ul class="nav__list">
+                <li><a class="nav__link" href="/html/projects.html">Проекты по разработке сайтов</a></li>
+                <li><a class="nav__link" href="/html/projectsCite.html">Разработка сайтов</a></li>
+                <li><a class="nav__link" href="/html/projectsGameJunior.html">Разработка игр Junior</a></li>
+                <li><a class="nav__link" href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                <li class="active"><a class="nav__link" href="#">Разработка игр Senior</a></li>
+                <li><a class="nav__link" href="/html/projectsPython.html">Программирование на Python</a></li>
+            </ul>
+        </nav>
+        <section class="projects">
+            <h2 class="projects__title">Проекты по разработке игр Senior</h2>
+            <div class="projects__blocks">
+                <div class="projects__block">
+                    <p class="projects__btn-lip">Python Start</p>
+                    <p class="projects__name">Михаил, 12 лет</p>
+                    <p class="projects__name-txt">Обучается с января 2023 года</p>
+                    <p class="projects__text">Cоздание текстового квеста на Python.</p>
+                    <video controls="controls" class="projects__video" >
+                        <source src="/video/данил.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                        <source src="/video/данил.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="/video/данил.webm" type='video/webm; codecs="vp8, vorbis"'>
+                    </video>
+                </div>
+                <div class="projects__block">
+                    <p class="projects__btn-lip">Python Start</p>
+                    <p class="projects__name">Михаил, 12 лет</p>
+                    <p class="projects__name-txt">Обучается с января 2023 года</p>
+                    <p class="projects__text">Cоздание текстового квеста на Python.</p>
+                    <video controls="controls" class="projects__video" >
+                        <source src="/video/данил.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                        <source src="/video/данил.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="/video/данил.webm" type='video/webm; codecs="vp8, vorbis"'>
+                    </video>
+                </div>
+                <div class="projects__block">
+                    <p class="projects__btn-lip">Python Start</p>
+                    <p class="projects__name">Михаил, 12 лет</p>
+                    <p class="projects__name-txt">Обучается с января 2023 года</p>
+                    <p class="projects__text">Cоздание текстового квеста на Python.</p>
+                    <video controls="controls" class="projects__video" >
+                        <source src="/video/данил.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                        <source src="/video/данил.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="/video/данил.webm" type='video/webm; codecs="vp8, vorbis"'>
+                    </video>
+                </div>
+                <div class="projects__block">
+                    <p class="projects__btn-lip">Python Start</p>
+                    <p class="projects__name">Михаил, 12 лет</p>
+                    <p class="projects__name-txt">Обучается с января 2023 года</p>
+                    <p class="projects__text">Cоздание текстового квеста на Python.</p>
+                    <video controls="controls" class="projects__video" >
+                        <source src="/video/данил.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                        <source src="/video/данил.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="/video/данил.webm" type='video/webm; codecs="vp8, vorbis"'>
+                    </video>
+                </div>
+                <div class="projects__block">
+                    <p class="projects__btn-lip">Python Start</p>
+                    <p class="projects__name">Михаил, 12 лет</p>
+                    <p class="projects__name-txt">Обучается с января 2023 года</p>
+                    <p class="projects__text">Cоздание текстового квеста на Python.</p>
+                    <video controls="controls" class="projects__video" >
+                        <source src="/video/данил.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                        <source src="/video/данил.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="/video/данил.webm" type='video/webm; codecs="vp8, vorbis"'>
+                    </video>
+                </div>
+            </div>
+        </section>
+        </div>
+<footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Курсы для взрослых</h3>
+            <ul class="footer-menu">
+              <li>
+                <a href="#">Основы программирования (Python, JavaScript, C#)</a>
+              </li>
+              <li>
+                <a href="#"
+                  >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
+                >
+              </li>
+              <li><a href="#">Анализ данных и машинное обучение</a></li>
+              <li><a href="#">Автоматизация и DevOps</a></li>
+              <li><a href="#">Разработка мобильных приложений</a></li>
+              <li><a href="#">Кибербезопасность и ПО</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Курсы для детей</h3>
+            <ul class="footer-menu">
+              <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+                    <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+                    <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                    <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                    <li><a href="/html/python.html">Программирование на Python</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Общие страницы</h3>
+            <ul class="footer-menu">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/html/about.html">О нас</a></li>
+              
+              <li><a href="/index.html#contact">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>

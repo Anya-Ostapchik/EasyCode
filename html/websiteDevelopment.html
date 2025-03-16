@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/coursesPages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Разработка сайтов</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-container">
+            <ul class="menu">
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/html/about.html">О нас</a></li>
+                <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
+                <li><a href="/index.html#answers">FAQ</a></li>
+                <li><a href="/index.html#reviews">Отзывы</a></li>
+                <li><a href="/index.html#modal-submit">Контакты</a></li>
+            </ul>
+            <ul class="submenu-container">
+              
+                <li class="dropdown">
+                    <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#">Основы программирования (Python, JavaScript, C#)</a></li>
+                        <li><a href="#">Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a></li>
+                        <li><a href="#">Анализ данных и машинное обучение</a></li>
+                        <li><a href="#">Автоматизация и DevOps</a></li>
+                        <li><a href="#">Разработка мобильных приложений</a></li>
+                        <li><a href="#">Кибербезопасность и ПО</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/html/courseskid.html">Курсы для детей ▾</a>
+                    <ul class="submenu">
+                        <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+                    <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+                    <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                    <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                    <li><a href="/html/python.html">Программирование на Python</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            ☰
+        </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+          let menu = document.querySelector(".menu-container");
+          let body = document.querySelector("body");
+          menu.classList.toggle("active");
+          if (menu.classList.contains("active")) {
+              body.style.overflow = "hidden";
+          } else {
+              body.style.overflow = "auto";
+          }
+      }
+  </script>
+      
+    <div class="modal-overlay modal_closed" id="modal-overlay"></div>
+    
+    <a href="#" class="modal-trial-lesson__close modal_closed" id="modal-close" title="Закрыть модальное окно">x</a>
+
+    <div class="modal-trial-lesson modal_closed" id="modal-trial-lesson">
+        <h2 class="modal-trial-lesson__title">Запишитесь на <span class="blue">бесплатный</span> урок</h2>
+        <p class="modal-trial-lesson__txt_1">Оставьте заявку и наши менеджеры согласуют с Вами удобное время</p>
+
+        <form action="" method="post" id="trial__form">
+            <input class="modal-trial-lesson__input" type="text" id="name" placeholder="Как вас зовут?">
+            <input class="modal-trial-lesson__input" type="tel" id="phone__trial" name="request">
+            <span class="phone__txt-trial phone__txt_del" id="phone__txt-trial">*Введите корректный номер телефона</span>
+            <button class="modal-trial-lesson__btn submit-trial-lesson" id="trial__btn" type="submit">Записаться на бесплатный урок</button>
+        </form>
+
+        <div class="modal-trial-lesson__done done_close" id="trial__done">
+            Спасибо! Данные успешно отправлены.
+        </div>
+
+        <p class="modal-trial-lesson__txt_2">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a></p>
+    </div>
+    <div class="content-container first-section">
+        <section class="main">
+            <div>
+                <div class="main__desk">
+                    <h2 class="main__title">РАЗРАБОТКА САЙТОВ ДЛЯ ДЕТЕЙ 13–17 ЛЕТ</h2>
+                    <div class="main__img_dop">
+                        <svg>
+                            <use href="/sprite.svg#five_1"></use>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="main__txt">Cоздание веб-сайта или веб-приложения. Основными этапами процесса являются веб-дизайн, вёрстка страниц, программирование на стороне клиента и сервера, а также конфигурирование веб-сервера.</p>
+                        <div class="main__txtBtn">
+                            <a href="#" class="main__btn trial-lesson">Записаться на пробный урок</a>
+                            <span>попробуйте первое занятие <strong class="blue">бесплатно</strong></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__img">
+                    <svg>
+                        <use href="/sprite.svg#five_1"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <nav class="nav">
+            <div class="nav__str">
+                <a href="/index.html">Главная </a>/<a href="#"> Курс "Разработка сайтов"</a>
+            </div>
+            <ul class="nav__list">
+                <li><a class="nav__link" href="/html/courseskid.html">Все курсы</a></li>
+                <li class="active"><a class="nav__link" href="#">Разработка сайтов</a></li>
+                <li><a class="nav__link" href="/gameJunior.html">Разработка игр Junior</a></li>
+                <li><a class="nav__link" href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                <li><a class="nav__link" href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                <li><a class="nav__link" href="/html/python.html">Программирование на Python</a></li>
+            </ul>
+        </nav>
+        <section class="description">
+            <div>
+                <h2 class="cource__title">Краткое описание</h2>
+                <div class="cource__description">
+                    <p>Возраст: <strong>13 - 17 лет</strong></p>
+                    <p>Продолжительность — <strong>48 занятий (12 месяцев)</strong></p><br>
+                    <p>Все сайты и веб-приложения состоят из двух частей: <strong>frontend</strong> и <strong>backend</strong>. На нашем направлении разработки сайтов ученики будут изучать frontend. Это языки разметки <strong>HTML</strong> и <strong>CSS</strong>, отвечающие за позиционирование и оформление элементов, например, где находится и как выглядит заголовок.</p><br>
+                    <p>Также, в направление входит изучение языка программирования <strong>javascript,</strong> который добавляет интерактивности сайту — интересные кнопки, галереи, анимации и прочее.</p><br>
+                    <p>Любой сайт, или веб-приложение создается при помощи этих трех незаменимых элементов веб-разработки.</p>
+                    <p>По итогу 48 занятий ученик <strong>создаст порядка 4-5 собственных сайтов.</strong> Изучит все ключевые этапы разработки (дизайн, верстка, программирование, публикация на хостинг), будет понимать, какие сайты существуют и когда, какой тип сайта будет уместнее. Создание интернет-магазинов, блогов, лендингов, многостраничных сайтов — это все про наше направление.</p><br>
+                    <strong>Soft Skills, которые обретут дети:</strong>
+                    <ul>
+                        <li>умение правильно излагать мысли;</li>
+                        <li>умение ошибаться и принимать свои ошибки;</li>
+                        <li>умение искать и находить решение проблемы;</li>
+                        <li>умение задавать конструктивные вопросы;</li>
+                        <li>развитие творческого потенциала.</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2 class="cource__title">HTML + CSS (32 урока)</h2>
+                <div class="cource__description">
+                    <strong>Цели курса:</strong>
+                    <ul>
+                        <li>изучение основных структурных единиц сайта;</li>
+                        <li>освоение принципа работы с кодом в VS code;</li>
+                        <li>практическое применение основных тегов HTML;</li>
+                        <li>создание отдельные css-файлы и подключать их к CSS-документу;</li>
+                        <li>осуществление верстки сайта блоками и описание их оформления с помощью CSS;</li>
+                        <li>освоение базовых инструментов прототипирования и дизайна;</li>
+                        <li>перенос свойств макета в CSS-свойства сайта при верстке сайта по макету;</li>
+                        <li>размещение файлов в Интернете с помощью встроенного загрузчика на бесплатном хостинге.</li>
+                    </ul><br>
+                    <strong>Hard Skills, которые обретут дети:</strong>
+                    <ul>
+                        <li>знание и понимание основных этапов создания сайтов;</li>
+                        <li>знание основных тегов для создания сайта принципом блочной верстки;</li>
+                        <li>знание основных принципов выравнивания и оформления элементов сайта;</li>
+                        <li>умение работать над собственным проектом.</li>
+                    </ul><br>
+                </div>
+            </div>
+            <div>
+                <h2 class="cource__title">JavaScript (16 уроков)</h2>
+                <div class="cource__description">
+                    <strong>Цели курса</strong>
+                    <ul>
+                        <li>изучить фреймворки и библиотеки, облегчающие js- разработку;</li>
+                        <li>познакомиться с основами программирования и алгоритмов;</li>
+                        <li>разобрать синтаксис и основные конструкции js;</li>
+                        <li>научиться применять js при разработке сайтов и браузерных приложений;</li>
+                        <li>разработать полноценные страницы сайта, задействовав js;</li>
+                        <li>разработать игровые механики на js.</li>
+                    </ul><br>
+                    <strong>Hard Skills, которые обретут дети:</strong>
+                    <ul>
+                        <li>написание js-кода для решения конкретных задач;</li>
+                        <li>анализ и оптимизация кода;</li>
+                        <li>работа с библиотеками и фреймворками для рационального решения поставленных задач;</li>
+                        <li>создание анимации, обработка и анализ событий на javascript.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="grid">
+            <div class="grid__title">
+                <h2>Зажигаем сердца и умы будущих IT-специалистов</h2>
+            </div>
+            <div class="grid__container">
+                <div class="grid__item">
+                    <h3>Профориентируем</h3>
+                    <p>Ребёнок пробует себя в роли разных IT-специалистов и начинает лучше понимать перспективы: кем работать и как применять свои навыки после школы.</p>
+                </div>
+                <div class="grid__item">
+                    <h3>Вовлекаем в онлайн-обучение</h3>
+                    <p>Ребята не просто общаются с преподавателем, а участвуют в викторинах, командных соревнованиях, тестированиях, физкультминутках, разминках, дискуссиях.</p>
+                </div>
+                <div class="grid__item">
+                    <h3>Повышаем успеваемость</h3>
+                    <p>Ориентируемся на текущие знания ребёнка: он расширяет кругозор и начинает больше интересоваться школьными предметами.</p>
+                </div>
+                <div class="grid__item">
+                    <h3>Нацеливаем на результат</h3>
+                    <p>На протяжении обучения ребёнок создаёт несколько проектов: личный после каждого, командный и финальный к концу обучения.
+                    </p>
+                </div>
+        </section>
+    <section class="six">
+        <div class="six__img">
+            <img src="/imgs/six.webp" alt="">
+        </div>
+        <div class="six__desk">
+            <div class="six__titleTxt">
+                <h2 class="six__title">Попробуйте первый урок БЕСПЛАТНО</h2>
+                <p class="six__txt">За 60 минут вы сделаете свою первую простую игру, мини-сайт или даже чат-бота и пройдет профориентацию</p>
+            </div>
+            <div class="six__imgBlocks">
+                <div class="six__img_dop">
+                    <img src="/imgs/six.webp" alt="">
+                </div>
+                <div class="six__blocks">
+                    <div class="six__block">
+                        <span class="six__block_num">10<br><span class="six__block_min">мин</span></span>
+                        <p>Знакомимся с учеником</p>
+                    </div>
+                    <div class="six__block">
+                        <span class="six__block_num">40<br><span class="six__block_min">мин</span></span>
+                        <p>Практическое занятие</p>
+                    </div>
+                    <div class="six__block">
+                        <span class="six__block_num">10<br><span class="six__block_min">мин</span></span>
+                        <p>Проводим профориентацию</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="six__btn trial-lesson">Записаться на пробный урок</a>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Курсы для взрослых</h3>
+        <ul class="footer-menu">
+          <li>
+            <a href="#">Основы программирования (Python, JavaScript, C#)</a>
+          </li>
+          <li>
+            <a href="#"
+              >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
+            >
+          </li>
+          <li><a href="#">Анализ данных и машинное обучение</a></li>
+          <li><a href="#">Автоматизация и DevOps</a></li>
+          <li><a href="#">Разработка мобильных приложений</a></li>
+          <li><a href="#">Кибербезопасность и ПО</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Курсы для детей</h3>
+        <ul class="footer-menu">
+          <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+                    <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+                    <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                    <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                    <li><a href="/html/python.html">Программирование на Python</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Общие страницы</h3>
+        <ul class="footer-menu">
+<li><a href="/">Главная</a></li>
+              <li><a href="/html/about.html">О нас</a></li>
+              
+              <li><a href="/index.html#contact">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+    
+    <script>
+        const phoneInputField1 = document.querySelector("#phone__trial");
+        const phoneInput1 = window.intlTelInput(phoneInputField1, {
+            preferredCountries: ["ru", "by", "kz"],
+            autoInsertDialCode: true,
+            nationalMode: false,
+            utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+    <script src="/script/trialLesson.js"></script>
+</body>
+</html>

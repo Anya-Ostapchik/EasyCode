@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/courses.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Курсы программирования</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-container">
+            <ul class="menu">
+                <li><a href="/index.html">Главная</a></li>
+                <li><a href="/html/about.html">О нас</a></li>
+                <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
+                <li><a href="/index.html#answers">FAQ</a></li>
+                <li><a href="/index.html#reviews">Отзывы</a></li>
+                <li><a href="/index.html#modal-submit">Контакты</a></li>
+            </ul>
+            <ul class="submenu-container">
+              
+                <li class="dropdown">
+                    <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#">Основы программирования (Python, JavaScript, C#)</a></li>
+                        <li><a href="#">Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a></li>
+                        <li><a href="#">Анализ данных и машинное обучение</a></li>
+                        <li><a href="#">Автоматизация и DevOps</a></li>
+                        <li><a href="#">Разработка мобильных приложений</a></li>
+                        <li><a href="#">Кибербезопасность и ПО</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/html/courseskid.html">Курсы для детей ▾</a>
+                    <ul class="submenu">
+                        <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+                    <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+                    <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                    <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                    <li><a href="/html/python.html">Программирование на Python</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            ☰
+        </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+          let menu = document.querySelector(".menu-container");
+          let body = document.querySelector("body");
+          menu.classList.toggle("active");
+          if (menu.classList.contains("active")) {
+              body.style.overflow = "hidden";
+          } else {
+              body.style.overflow = "auto";
+          }
+      }
+  </script>
+      
+    <div class="modal-overlay modal_closed" id="modal-overlay"></div>
+    <div class="modal-submit modal_closed" id="modal-submit">
+        <svg>
+            <use href="/sprite.svg#check"></use>
+        </svg>
+        <p>Спасибо! Данные успешно отправлены.</p>
+    </div>
+    
+    <a href="#" class="modal-trial-lesson__close modal_closed" id="modal-close" title="Закрыть модальное окно">x</a>
+
+    <div class="modal-trial-lesson modal_closed" id="modal-trial-lesson">
+        <h2 class="modal-trial-lesson__title">Запишитесь на <span class="blue">бесплатный</span> урок</h2>
+        <p class="modal-trial-lesson__txt_1">Оставьте заявку и наши менеджеры согласуют с Вами удобное время</p>
+
+        <form action="" method="post" id="trial__form">
+            <input class="modal-trial-lesson__input" type="text" id="name" placeholder="Как вас зовут?">
+            <input class="modal-trial-lesson__input" type="tel" id="phone__trial" name="request">
+            <span class="phone__txt-trial phone__txt_del" id="phone__txt-trial">*Введите корректный номер телефона</span>
+            <button class="modal-trial-lesson__btn submit-trial-lesson" id="trial__btn" type="submit">Записаться на бесплатный урок</button>
+        </form>
+
+        <div class="modal-trial-lesson__done done_close" id="trial__done">
+            Спасибо! Данные успешно отправлены.
+        </div>
+
+        <p class="modal-trial-lesson__txt_2">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a></p>
+    </div>
+    <div class="main__link first-section">
+        <a href="/index.html">Главная </a>/<a href="#"> Курсы программирования</a>
+    </div>
+    <section class="main">
+        <div class="main__wrap">
+            <div class="main__content">
+                <div class="main__desk">
+                    <h2 class="main__title">КУРСЫ ПРОГРАММИРОВАНИЯ ДЛЯ ВЗРОСЛЫХ</h2>
+                </div>
+                <div class="main__img">
+                    <svg>
+                        <use href="/sprite.svg#courses"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content">
+        <nav class="nav">            
+            <ul class="nav__list">
+                <li class="active"><a class="nav__link" href="#">Все курсы</a></li>
+                <li><a class="nav__link" href="/html/websiteDevelopment.html">Основы программирования</a></li>
+                <li><a class="nav__link" href="/html/gameJunior.html">Веб-разработка</a></li>
+                <li><a class="nav__link" href="/html/gameMiddle.html">Анализ данных и машинное обучение</a></li>
+                <li><a class="nav__link" href="/html/gameSenior.html">Автоматизация и DevOps</a></li>
+                <li><a class="nav__link" href="/html/python.html">Разработка мобильных приложений</a></li>
+                <li><a class="nav__link" href="/html/python.html">Кибербезопасность и ПО</a></li>
+            </ul>
+        </nav>
+        <section class="courses">
+            <svg class="courses__bg_left">
+                <use href="/sprite.svg#bg_left"></use>
+            </svg>
+            <svg  class="courses__bg_right">
+                <use href="/sprite.svg#bg_left"></use>
+            </svg>
+            <h2 class="courses__title">Какие есть курсы?</h2>
+            <div class="courses__blocks">
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_1"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Основы программирования</h4>
+                        <p>Курс по Основам программирования — это старт в IT. Вы изучите базовые концепции (переменные, циклы, функции) и освоите язык программирования, Python, JavaScript, C#. Много практики: задачи, проекты, поиск ошибок. Курс развивает логику и навыки решения задач, открывая путь к веб-разработке, анализу данных и другим IT-направлениям. Идеально для новичков.</p>
+                        <a class="courses__block-link" href="/html/websiteDevelopment.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_2"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Веб-разработка</h4>
+                        <p>Курс по Веб-разработке — это возможность научиться создавать современные сайты и веб-приложения. Вы освоите ключевые технологии: HTML для структуры страниц, CSS для стилей и JavaScript для интерактивности. Также познакомитесь с популярными фреймворками, такими как React или Vue.js, и научитесь работать с серверной частью (Node.js, базы данных). Курс включает много практики: от верстки макетов до разработки полноценных веб-приложений. Подходит для начинающих и тех, кто хочет углубить свои навыки. Идеальный старт для карьеры в веб-разработке.</p>
+                        <a class="courses__block-link" href="/html/gameJunior.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_3"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Анализ данных и машинное обучение</h4>
+                        <p>Курс по Анализу данных и машинному обучению — это погружение в мир работы с большими данными и создание интеллектуальных систем. Вы научитесь обрабатывать, анализировать и визуализировать данные с помощью Python и библиотек, таких как Pandas, NumPy и Matplotlib. Освоите основы машинного обучения: от линейной регрессии до нейронных сетей, используя Scikit-learn и TensorFlow. Курс включает решение реальных задач: прогнозирование, классификация, кластеризация данных. Подходит для тех, кто хочет начать карьеру в Data Science или углубить свои знания в области анализа данных и ИИ. Практика и проекты помогут закрепить навыки и подготовиться к работе в этой перспективной сфере.</p>
+                        <a class="courses__block-link" href="/html/gameMiddle.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_4"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Автоматизация и DevOps</h4>
+                        <p>Курс по Автоматизации и DevOps — это возможность освоить современные подходы к разработке, тестированию и доставке программного обеспечения. Вы изучите инструменты для автоматизации процессов, такие как Ansible, Terraform и Jenkins, научитесь настраивать CI/CD-пайплайны для быстрого и надежного развертывания приложений. Также познакомитесь с облачными платформами (AWS, Azure, Google Cloud) и контейнеризацией с использованием Docker и Kubernetes. Курс подходит для разработчиков, системных администраторов и всех, кто хочет улучшить процессы в IT-командах. Практические задания и проекты помогут вам стать востребованным специалистом в области DevOps.</p>
+                        <a class="courses__block-link" href="/html/gameSenior.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_5"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Разработка мобильных приложений</h4>
+                        <p>Курс по Разработке мобильных приложений — это возможность научиться создавать приложения для iOS и Android. Вы освоите ключевые технологии и языки программирования, такие как Swift для iOS и Kotlin/Java для Android, а также познакомитесь с кросс-платформенными решениями, например, Flutter или React Native. Курс включает проектирование интерфейсов, работу с базами данных, интеграцию API и тестирование приложений. Много практики: от простых приложений до полноценных проектов с публикацией в App Store и Google Play. Подходит для начинающих и тех, кто хочет углубить свои навыки в мобильной разработке. Идеальный старт для карьеры в этой динамичной сфере.</p>
+                        <a class="courses__block-link" href="/html/python.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__blocks">
+                    <div class="courses__block">
+                        <div class="courses__block-img">
+                            <svg>
+                                <use href="/sprite.svg#five_1"></use>
+                            </svg>
+                        </div>
+                        <div class="courses__block-desc">
+                            <h4>Кибербезопасность и ПО</h4>
+                            <p>Курс по Кибербезопасности и защите информации — это возможность освоить навыки защиты данных и систем от кибератак. Вы изучите основы сетевой безопасности, криптографии, методы анализа уязвимостей и защиты от них. Познакомитесь с инструментами для тестирования на проникновение, такими как Metasploit, Wireshark, и научитесь выявлять и устранять угрозы. Курс также охватывает безопасность веб-приложений, операционных систем и сетей. Практические задания и симуляции атак помогут закрепить знания. Подходит для начинающих и IT-специалистов, желающих углубить свои навыки в области кибербезопасности. Идеальный выбор для тех, кто хочет строить карьеру в этой востребованной сфере.</p>
+                            <a class="courses__block-link" href="/html/websiteDevelopment.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                            <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="why-courses"> <div class="why-courses__grid"> <h2 class="grid__title">Почему стоит начать изучать IT уже сейчас?</h2> <div class="grid__blocks"> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="/sprite.svg#three_1"></use> </svg> </div> <h4>Совершенствование английского языка</h4> </div> <p>Обучение проходит на русском языке, но мы также помогаем развить навыки английского, необходимые для работы в IT-сфере.</p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="/sprite.svg#three_2"></use> </svg> </div> <h4>Освоение ключевых навыков разработчика</h4> </div> <p>На курсе вы научитесь создавать игры, веб-сайты и приложения, а также освоите популярные языки программирования, такие как Python, JavaScript, C# и другие.</p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="/sprite.svg#three_3"></use> </svg> </div> <h4>Комплексное развитие навыков</h4> </div> <p>Вы не только изучите программирование, но и разовьете логическое мышление, научитесь решать сложные задачи и улучшите свои знания в математике и аналитике.</p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="/sprite.svg#three_4"></use> </svg> </div> <h4>Навыки работы в команде</h4> </div> <p>Занятия проходят в группах, где вы сможете обмениваться опытом, находить единомышленников и учиться эффективно взаимодействовать с коллегами.</p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="/sprite.svg#three_5"></use> </svg> </div> <h4>Получение сертификата</h4> </div> <p>После завершения курса вы получите сертификат, подтверждающий ваши навыки и знания, что станет отличным дополнением к вашему резюме.</p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="/sprite.svg#three_6"></use> </svg> </div> <h4>Опытные преподаватели-практики</h4> </div> <p>Наши преподаватели — это профессионалы из ведущих IT-компаний, которые знают, какие навыки действительно востребованы на рынке.</p> </div> </div> </div>
+            <div class="why-courses__blue">
+                <div class="why-courses__grid-content">
+                    <h2 class="blue__title">Успейте записаться на бесплатное пробное занятие с IT-преподавателем</h2>
+                    <p class="blue__txt">Мы покажем нашу работу изнутри, для понимания как будет проходить обучение</p>
+                    <div class="blue__grid"> <div class="blue__grid-elem"> <div class="blue__grid-block_1"> <span>1</span> <h4>Практическое занятие с опытным преподавателем</h4> </div> <p>После определения ваших интересов и целей в IT, мы вместе создадим первый проект в выбранной области, будь то веб-разработка, анализ данных или мобильные приложения.</p> <div class="blue__grid-block_2"> <p>Стоимость часа занятий:</p> <span class="line-through grey">50 BYN</span> <span>0 BYN</span> </div> </div> <div class="blue__grid-elem"> <div class="blue__grid-block_1"> <span>2</span> <h4>Определите свои сильные стороны</h4> </div> <ul> <li>Поймете, подходит ли вам программирование или другая IT-специальность</li> <li>Познакомитесь с преподавателем и методикой обучения</li> <li>Получите индивидуальную консультацию и анализ ваших текущих навыков</li> </ul> <div class="blue__grid-block_2"> <p>Стоимость консультации:</p> <span class="line-through grey">20 BYN</span> <span>0 BYN</span> </div> </div> <div class="blue__grid-elem"> <div class="blue__grid-block_1"> <span>3</span> <h4>Создадите свой первый проект</h4> </div> <img src="/imgs/three1.jpg" alt="Первый проект"> <div class="blue__grid-block_2"> <p>Цена материалов:</p> <span class="line-through grey">100 BYN</span> <span>0 BYN</span> </div> </div> </div>
+                </div>
+                <div class="why-courses__trial-lesson">
+                    <div class="trial-lesson__img">
+                        <img src="/imgs/three2.png" alt="">
+                    </div>
+                    <div class="trial-lesson__desk">
+                        <p class="trial-lesson__title">Запишитесь на пробное занятие* и получите это:</p>
+                        <p class="trial-lesson__price">Общая цена: <span class="trial-lesson__price_big">170 руб.</span></p>
+                        <p class="trial-lesson__free">БЕСПЛАТНО</p>
+                    </div>
+                    <div class="trial-lesson__btn">
+                        <a href="#" class="trial-lesson">Записаться</a>
+                        <p class="trial-lesson__txt">*количество мест ограничено</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lessons-how"> <h2>Как проходят занятия?</h2> <div class="lessons-how__grid"> <div class="lessons-how__grid-elem"> <svg> <use href="/sprite.svg#fore_1"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Мини-группы до 10 человек</h4> <p>Обучение в небольших группах позволяет эффективно взаимодействовать с преподавателем и другими участниками, обмениваться опытом и работать над совместными проектами.</p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="/sprite.svg#fore_2"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Длительность уроков 90 минут</h4> <p>Оптимальное время для усвоения материала. Включает перерывы для отдыха и обсуждения вопросов.</p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="/sprite.svg#fore_3"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Гибкий график занятий</h4> <p>Мы подбираем удобное время для занятий, чтобы обучение легко вписывалось в ваш распорядок дня.</p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="/sprite.svg#fore_4"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Практический подход к обучению</h4> <p>Каждое занятие наполнено практическими заданиями и реальными кейсами, чтобы вы могли сразу применять полученные знания.</p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="/sprite.svg#fore_5"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Индивидуальные консультации</h4> <p>Возможность заниматься один на один с преподавателем для углубленного изучения тем или решения сложных задач.</p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="/sprite.svg#fore_6"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Равные возможности для всех</h4> <p>Мы уделяем внимание каждому студенту. Если материал вызывает сложности, преподаватель поможет разобраться и закрепить знания.</p> </div> </div> </div> </section>
+        <section class="reviews" id="reviews"> <h2 class="reviews__title">Отзывы</h2> <div class="swiper-par__btn"> <div class="swiper swiper-parent"> <div class="swiper-wrapper"> <div class="swiper-slide"> <div class="swiper-slide__wrap"> <div class="swiper-item__par"> <div class="swiper__name"> <img src="/imgs/parent.webp" alt=""> <div class="swiper__parent"> <p>Алексей Иванов</p> <span>15 октября 2023 года</span> </div> </div> <p>Огромное спасибо за качественное обучение! Курсы помогли мне освоить новые навыки в программировании, которые я уже применяю в своей работе. Преподаватели — настоящие профессионалы, материал подается четко и структурированно. Рекомендую!</p> </div> </div> </div> <div class="swiper-slide"> <div class="swiper-slide__wrap"> <div class="swiper-item__par"> <div class="swiper__name"> <img src="/imgs/parent.webp" alt=""> <div class="swiper__parent"> <p>Екатерина Смирнова</p> <span>10 октября 2023 года</span> </div> </div> <p>Прошла курс по веб-разработке и осталась очень довольна. Практические задания помогли закрепить теорию, а гибкий график позволил совмещать обучение с работой. Теперь чувствую себя увереннее в IT-сфере. Спасибо!</p> </div> </div> </div> <div class="swiper-slide"> <div class="swiper-slide__wrap"> <div class="swiper-item__par"> <div class="swiper__name"> <img src="/imgs/parent.webp" alt=""> <div class="swiper__parent"> <p>Дмитрий Петров</p> <span>5 октября 2023 года</span> </div> </div> <p>Курс по анализу данных превзошел все ожидания. Материал изложен доступно, много практики и реальных кейсов. Преподаватели всегда готовы помочь и объяснить сложные моменты. Отличный старт для карьеры в Data Science!</p> </div> </div> </div> <div class="swiper-slide"> <div class="swiper-slide__wrap"> <div class="swiper-item__par"> <div class="swiper__name"> <img src="/imgs/parent.webp" alt=""> <div class="swiper__parent"> <p>Ольга Козлова</p> <span>1 октября 2023 года</span> </div> </div> <p>Очень понравился подход к обучению: мини-группы, внимание к каждому студенту и много практики. После курса по мобильной разработке я смогла создать свое первое приложение. Спасибо за качественные знания!</p> </div> </div> </div> <div class="swiper-slide"> <div class="swiper-slide__wrap"> <div class="swiper-item__par"> <div class="swiper__name"> <img src="/imgs/parent.webp" alt=""> <div class="swiper__parent"> <p>Игорь Васильев</p> <span>25 сентября 2023 года</span> </div> </div> <p>Курс по кибербезопасности оказался очень полезным. Получил много практических навыков, которые уже применяю в своей работе. Преподаватели — эксперты в своей области. Рекомендую всем, кто хочет развиваться в IT!</p> </div> </div> </div> </div> </div> <div class="prev__par"></div> <div class="next__par"></div> </div> </section>
+        <section class="about"> <div class="about__content"> <div class="about__img"> <img src="/imgs/about.jpg" alt=""> </div> <div class="about__desk"> <div class="about__content_save"> <h3 class="about__title">О нас</h3> <p class="about__text">Мы помогаем взрослым освоить востребованные навыки в IT-сфере, чтобы они могли развиваться в профессии, менять карьеру или реализовывать свои проекты.</p> </div> <div class="about__block_delete"> <h3 class="about__title">Наша миссия</h3> <p class="about__text">Мы стремимся показать, что обучение может быть увлекательным, практичным и эффективным. Наши курсы дают актуальные знания, которые сразу можно применять в работе или личных проектах.</p><br> <p class="about__text">Мы помогаем нашим студентам раскрыть потенциал, освоить новые технологии и достичь профессиональных целей. Обучение с нами — это инвестиция в ваше будущее!</p> </div> </div> </div> <div class="about__block_min"> <h3 class="about__title">Наша миссия</h3> <p class="about__text">Мы стремимся показать, что обучение может быть увлекательным, практичным и эффективным. Наши курсы дают актуальные знания, которые сразу можно применять в работе или личных проектах.</p><br> <p class="about__text">Мы помогаем нашим студентам раскрыть потенциал, освоить новые технологии и достичь профессиональных целей. Обучение с нами — это инвестиция в ваше будущее!</p> </div> </section>
+        <section class="request">
+            <div class="request__imgDesk">
+                <svg>
+                    <use href="/sprite.svg#request"></use>
+                </svg>
+                <h2>Записаться на бесплатное занятие проще простого</h2>
+                <p>Уже на первом занятии погрузим в азы разработки и сделаем небольшой проект, от которого вы будете в восторге!</p>
+            </div>
+            <div class="request__form">
+                <h2>Оставьте заявку</h2>
+                <p class="request__desc">и забронируйте место<br>на бесплатный урок</p>
+                <form class="request__form-f" action="" method="post">
+                    <label for="name">Как Вас зовут?</label>
+                    <input  type="text" id="name" placeholder="Имя Фамилия">
+                    <label for="phone"> Ваш номер телефона</label>
+                    <input class="phone" type="tel" id="phone" name="request">
+                    <span class="phone__txt phone__txt_del">*Введите корректный номер телефона</span>
+                    <button class="request__btn submit-application" type="submit">Оставить заявку</button>
+                </form>
+                <p class="request__txt">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a></p>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Курсы для взрослых</h3>
+            <ul class="footer-menu">
+              <li>
+                <a href="#">Основы программирования (Python, JavaScript, C#)</a>
+              </li>
+              <li>
+                <a href="#"
+                  >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
+                >
+              </li>
+              <li><a href="#">Анализ данных и машинное обучение</a></li>
+              <li><a href="#">Автоматизация и DevOps</a></li>
+              <li><a href="#">Разработка мобильных приложений</a></li>
+              <li><a href="#">Кибербезопасность и ПО</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Курсы для детей</h3>
+            <ul class="footer-menu">
+              <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+                    <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+                    <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+                    <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+                    <li><a href="/html/python.html">Программирование на Python</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Общие страницы</h3>
+            <ul class="footer-menu">
+              <li><a href="/">Главная</a></li>
+              <li><a href="/html/about.html">О нас</a></li>
+              
+              <li><a href="/index.html#contact">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiperParents = new Swiper('.swiper-parent', {
+            navigation: {
+                nextEl: '.next__par',
+                prevEl: '.prev__par',
+            },
+            slidesPerView: '2.2',
+            spaceBetween: 30,
+            speed: 1000,
+            breakpoints: {
+                300: {
+                    slidesPerView: '1',
+                },
+                640: {
+                    slidesPerView: '2',
+                },
+                960: {
+                    slidesPerView: '2.2',
+                }
+            }
+        });
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            preferredCountries: ["ru", "by", "kz"],
+            autoInsertDialCode: true,
+            nationalMode: false,
+            utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+        const phoneInputField1 = document.querySelector("#phone__trial");
+        const phoneInput1 = window.intlTelInput(phoneInputField1, {
+            preferredCountries: ["ru", "by", "kz"],
+            autoInsertDialCode: true,
+            nationalMode: false,
+            utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+    <script src="/script/submitApplication.js"></script>
+    <script src="/script/trialLesson.js"></script>
+</body>
+</html>
