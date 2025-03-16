@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Raleway:wght@300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/coursesPages.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Разработка мобильных приложений</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/html/about.html">О нас</a></li>
+          <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
+          <li><a href="/index.html#answers">FAQ</a></li>
+          <li><a href="/index.html#reviews">Отзывы</a></li>
+          <li><a href="/index.html#modal-submit">Контакты</a></li>
+        </ul>
+        <ul class="submenu-container">
+          <li class="dropdown">
+            <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
+            <ul class="submenu">
+              <li>
+                <a href="/html/basicsPprogramming.html"
+                  >Основы программирования (Python, JavaScript, C#)</a
+                >
+              </li>
+              <li>
+                <a href="/html/webDevelopmentAdult.html"
+                  >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
+                >
+              </li>
+              <li>
+                <a href="/html/dataAnalysis.html"
+                  >Анализ данных и машинное обучение</a
+                >
+              </li>
+              <li>
+                <a href="/html/AutomationDevOps.html">Автоматизация и DevOps</a>
+              </li>
+              <li>
+                <a href="/html/mobileApplication.html"
+                  >Разработка мобильных приложений</a
+                >
+              </li>
+              <li>
+                <a href="/html/CybersecuritySoftware.html"
+                  >Кибербезопасность и ПО</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="/html/courseskid.html">Курсы для детей ▾</a>
+            <ul class="submenu">
+              <li>
+                <a href="/html/websiteDevelopment.html">Разработка сайтов</a>
+              </li>
+              <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+              <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+              <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+              <li>
+                <a href="/html/python.html">Программирование на Python</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="burger-menu" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        let menu = document.querySelector(".menu-container");
+        let body = document.querySelector("body");
+        menu.classList.toggle("active");
+        if (menu.classList.contains("active")) {
+          body.style.overflow = "hidden";
+        } else {
+          body.style.overflow = "auto";
+        }
+      }
+    </script>
+
+    <div class="modal-overlay modal_closed" id="modal-overlay"></div>
+
+    <a
+      href="#"
+      class="modal-trial-lesson__close modal_closed"
+      id="modal-close"
+      title="Закрыть модальное окно"
+      >x</a
+    >
+
+    <div class="modal-trial-lesson modal_closed" id="modal-trial-lesson">
+      <h2 class="modal-trial-lesson__title">
+        Запишитесь на <span class="blue">бесплатный</span> урок
+      </h2>
+      <p class="modal-trial-lesson__txt_1">
+        Оставьте заявку и наши менеджеры согласуют с Вами удобное время
+      </p>
+
+      <form action="" method="post" id="trial__form">
+        <input
+          class="modal-trial-lesson__input"
+          type="text"
+          id="name"
+          placeholder="Как вас зовут?"
+        />
+        <input
+          class="modal-trial-lesson__input"
+          type="tel"
+          id="phone__trial"
+          name="request"
+        />
+        <span class="phone__txt-trial phone__txt_del" id="phone__txt-trial"
+          >*Введите корректный номер телефона</span
+        >
+        <button
+          class="modal-trial-lesson__btn submit-trial-lesson"
+          id="trial__btn"
+          type="submit"
+        >
+          Записаться на бесплатный урок
+        </button>
+      </form>
+
+      <div class="modal-trial-lesson__done done_close" id="trial__done">
+        Спасибо! Данные успешно отправлены.
+      </div>
+
+      <p class="modal-trial-lesson__txt_2">
+        Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+        соглашаетесь c <a href="#">политикой конфиденциальности</a>
+      </p>
+    </div>
+    <div class="content-container first-section">
+      <section class="main">
+        <div>
+            <div class="main__desk">
+                <h2 class="main__title">РАЗРАБОТКА МОБИЛЬНЫХ ПРИЛОЖЕНИЙ</h2>
+                <div class="main__img_dop">
+                    <svg><use href="/sprite.svg#five_1"></use></svg>
+                </div>
+                <div>
+                    <p class="main__txt">
+                        Освойте создание современных мобильных приложений для iOS и Android. Курс охватывает ключевые этапы разработки: проектирование интерфейсов, программирование на языках <strong>Swift</strong> и <strong>Kotlin</strong>, использование фреймворков <strong>Flutter</strong> и <strong>React Native</strong>, а также публикацию приложений в App Store и Google Play. Подходит для начинающих и тех, кто хочет углубить свои знания в мобильной разработке.
+                    </p>
+                    <div class="main__txtBtn">
+                        <a href="#" class="main__btn trial-lesson">Записаться на пробный урок</a>
+                        <span>Попробуйте первое занятие <strong class="blue">бесплатно</strong></span>
+                    </div>
+                </div>
+            </div>
+            <div class="main__img">
+                <svg><use href="/sprite.svg#five_5"></use></svg>
+            </div>
+        </div>
+    </section>
+      <nav class="nav">
+        <div class="nav__str">
+          <a href="/index.html">Главная </a>/<a href="#">
+            Курс "Веб-разработка"</a
+          >
+        </div>
+        <ul class="nav__list">
+          <li>
+            <a class="nav__link" href="/html/coursesadult.html">Все курсы</a>
+          </li>
+          <li>
+            <a class="nav__link" href="/html/basicsPprogramming.html"
+              >Основы программирования</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="/html/webDevelopmentAdult.html">Веб-разработка</a>
+          </li>
+          <li>
+            <a class="nav__link" href="/html/dataAnalysis.html"
+              >Анализ данных и машинное обучение</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="/html/AutomationDevOps.html"
+              >Автоматизация и DevOps</a
+            >
+          </li>
+          <li class="active">
+            <a class="nav__link" href="/html/mobileApplication.html"
+              >Разработка мобильных приложений</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="/html/CybersecuritySoftware.html"
+              >Кибербезопасность и ПО</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="description">
+        <div>
+            <h2 class="cource__title">Краткое описание</h2>
+            <div class="cource__description">
+                <p>Продолжительность курса — <strong>48 занятий (12 месяцев)</strong></p><br>
+                <p>Курс "Разработка мобильных приложений" предназначен для тех, кто хочет освоить создание современных приложений для iOS и Android. Вы изучите ключевые технологии и фреймворки, такие как <strong>Swift</strong>, <strong>Kotlin</strong>, <strong>Flutter</strong> и <strong>React Native</strong>.</p><br>
+                <p>На курсе вы познакомитесь с основными этапами разработки мобильных приложений:</p>
+                <ul>
+                    <li><strong>Проектирование интерфейсов</strong> — создание удобных и современных UI/UX-дизайнов.</li>
+                    <li><strong>Программирование</strong> — разработка функционала приложений на Swift (для iOS) и Kotlin (для Android).</li>
+                    <li><strong>Кроссплатформенная разработка</strong> — использование Flutter и React Native для создания приложений, работающих на обеих платформах.</li>
+                    <li><strong>Публикация</strong> — подготовка и размещение приложений в App Store и Google Play.</li>
+                </ul><br>
+                <p>По итогу 48 занятий вы <strong>создадите 4-5 собственных проектов</strong>, которые станут частью вашего портфолио. Вы научитесь разрабатывать приложения с нуля, тестировать их и публиковать в магазинах приложений.</p><br>
+                <strong>Навыки, которые вы приобретете:</strong>
+                <ul>
+                    <li>умение разрабатывать приложения для iOS и Android;</li>
+                    <li>навыки работы с современными фреймворками (Flutter, React Native);</li>
+                    <li>понимание принципов кроссплатформенной разработки;</li>
+                    <li>умение проектировать интерфейсы и создавать удобный UX;</li>
+                    <li>навыки публикации приложений в App Store и Google Play.</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2 class="cource__title">Разработка под iOS (16 уроков)</h2>
+            <div class="cource__description">
+                <strong>Цели курса:</strong>
+                <ul>
+                    <li>изучение языка Swift и его основных конструкций;</li>
+                    <li>освоение среды разработки Xcode;</li>
+                    <li>создание интерфейсов с использованием SwiftUI и UIKit;</li>
+                    <li>работа с базами данных (CoreData, Realm);</li>
+                    <li>интеграция API и работа с сетью.</li>
+                </ul><br>
+                <strong>Профессиональные навыки, которые вы приобретете:</strong>
+                <ul>
+                    <li>умение разрабатывать приложения для iOS;</li>
+                    <li>навыки работы с Swift и Xcode;</li>
+                    <li>понимание принципов создания интерфейсов;</li>
+                    <li>умение интегрировать API и работать с данными.</li>
+                </ul><br>
+            </div>
+        </div>
+        <div>
+            <h2 class="cource__title">Разработка под Android (16 уроков)</h2>
+            <div class="cource__description">
+                <strong>Цели курса:</strong>
+                <ul>
+                    <li>изучение языка Kotlin и его основных конструкций;</li>
+                    <li>освоение среды разработки Android Studio;</li>
+                    <li>создание интерфейсов с использованием Jetpack Compose и XML;</li>
+                    <li>работа с базами данных (Room, SQLite);</li>
+                    <li>интеграция API и работа с сетью.</li>
+                </ul><br>
+                <strong>Профессиональные навыки, которые вы приобретете:</strong>
+                <ul>
+                    <li>умение разрабатывать приложения для Android;</li>
+                    <li>навыки работы с Kotlin и Android Studio;</li>
+                    <li>понимание принципов создания интерфейсов;</li>
+                    <li>умение интегрировать API и работать с данными.</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2 class="cource__title">Кроссплатформенная разработка (16 уроков)</h2>
+            <div class="cource__description">
+                <strong>Цели курса:</strong>
+                <ul>
+                    <li>изучение фреймворка Flutter и языка Dart;</li>
+                    <li>освоение React Native и JavaScript для кроссплатформенной разработки;</li>
+                    <li>создание приложений, работающих на iOS и Android;</li>
+                    <li>интеграция API и работа с состоянием приложения.</li>
+                </ul><br>
+                <strong>Профессиональные навыки, которые вы приобретете:</strong>
+                <ul>
+                    <li>умение разрабатывать кроссплатформенные приложения;</li>
+                    <li>навыки работы с Flutter и React Native;</li>
+                    <li>понимание принципов управления состоянием приложения;</li>
+                    <li>умение интегрировать API и работать с данными.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+      <section class="grid">
+        <div class="grid__title">
+          <h2>Развиваем навыки и карьеру в IT для взрослых</h2>
+        </div>
+        <div class="grid__container">
+          <div class="grid__item">
+            <h3>Профессиональная ориентация</h3>
+            <p>
+              Вы сможете попробовать себя в роли различных IT-специалистов,
+              чтобы лучше понять перспективы карьерного роста и применения своих
+              навыков в реальных проектах.
+            </p>
+          </div>
+          <div class="grid__item">
+            <h3>Эффективное онлайн-обучение</h3>
+            <p>
+              Обучение включает не только лекции, но и практические задания,
+              тестирования, командные проекты, дискуссии и обсуждения, что
+              делает процесс максимально вовлекающим.
+            </p>
+          </div>
+          <div class="grid__item">
+            <h3>Повышение квалификации</h3>
+            <p>
+              Курс ориентирован на ваш текущий уровень знаний, помогая расширить
+              профессиональный кругозор и углубить понимание ключевых технологий
+              и инструментов.
+            </p>
+          </div>
+          <div class="grid__item">
+            <h3>Практическая направленность</h3>
+            <p>
+              На протяжении обучения вы создадите несколько проектов:
+              индивидуальные, командные и финальный проект, который станет
+              частью вашего портфолио.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="six">
+        <div class="six__img">
+          <img src="/imgs/six.webp" alt="" />
+        </div>
+        <div class="six__desk">
+          <div class="six__titleTxt">
+            <h2 class="six__title">Попробуйте первый урок БЕСПЛАТНО</h2>
+            <p class="six__txt">
+              За 60 минут вы сделаете свою первую простую игру, мини-сайт или
+              даже чат-бота и пройдет профориентацию
+            </p>
+          </div>
+          <div class="six__imgBlocks">
+            <div class="six__img_dop">
+              <img src="/imgs/six.webp" alt="" />
+            </div>
+            <div class="six__blocks">
+              <div class="six__block">
+                <span class="six__block_num"
+                  >10<br /><span class="six__block_min">мин</span></span
+                >
+                <p>Знакомимся с учеником</p>
+              </div>
+              <div class="six__block">
+                <span class="six__block_num"
+                  >40<br /><span class="six__block_min">мин</span></span
+                >
+                <p>Практическое занятие</p>
+              </div>
+              <div class="six__block">
+                <span class="six__block_num"
+                  >10<br /><span class="six__block_min">мин</span></span
+                >
+                <p>Проводим профориентацию</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="six__btn trial-lesson"
+            >Записаться на пробный урок</a
+          >
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Курсы для взрослых</h3>
+          <ul class="footer-menu">
+            <li>
+              <a href="/html/basicsPprogramming.html"
+                >Основы программирования (Python, JavaScript, C#)</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
+              >
+            </li>
+            <li>
+              <a href="/html/dataAnalysis.html"
+                >Анализ данных и машинное обучение</a
+              >
+            </li>
+            <li>
+              <a href="/html/AutomationDevOps.html">Автоматизация и DevOps</a>
+            </li>
+            <li>
+              <a href="/html/mobileApplication.html"
+                >Разработка мобильных приложений</a
+              >
+            </li>
+            <li>
+              <a href="/html/CybersecuritySoftware.html"
+                >Кибербезопасность и ПО</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Курсы для детей</h3>
+          <ul class="footer-menu">
+            <li>
+              <a href="/html/websiteDevelopment.html">Разработка сайтов</a>
+            </li>
+            <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+            <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+            <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+            <li><a href="/html/python.html">Программирование на Python</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Общие страницы</h3>
+          <ul class="footer-menu">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/html/about.html">О нас</a></li>
+
+            <li><a href="/index.html#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const phoneInputField1 = document.querySelector("#phone__trial");
+      const phoneInput1 = window.intlTelInput(phoneInputField1, {
+        preferredCountries: ["ru", "by", "kz"],
+        autoInsertDialCode: true,
+        nationalMode: false,
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
+    <script src="/script/trialLesson.js"></script>
+  </body>
+</html>
