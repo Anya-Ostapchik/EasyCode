@@ -1,1 +1,6 @@
 scss/
+kit/
+footer.kit
+header.kit
+index.kit
+prepros.config
