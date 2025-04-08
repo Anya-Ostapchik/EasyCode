@@ -23,75 +23,102 @@
   </head>
   <body>
 <nav class="navbar">
-    <a class="navbar-logo" href="/">EasyCode</a>
-    <div class="menu-container">
-        <ul class="menu">
-            <li><a href="/index.html">Главная</a></li>
-            <li><a href="/html/about.html">О нас</a></li>
-            <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
-            <li><a href="/index.html#answers">FAQ</a></li>
-            <li><a href="/index.html#reviews">Отзывы</a></li>
-            <li><a href="/index.html#contact">Контакты</a></li>
+  <a class="navbar-logo" href="/">EasyCode</a>
+  <div class="menu-container">
+    <ul class="menu">
+      <li><a href="/index.html">Главная</a></li>
+      <li><a href="/html/about.html">О нас</a></li>
+      <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
+      <li><a href="/index.html#answers">FAQ</a></li>
+      <li><a href="/index.html#reviews">Отзывы</a></li>
+      <li><a href="/index.html#contact">Контакты</a></li>
+    </ul>
+    <ul class="submenu-container">
+      <li class="dropdown">
+        <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
+        <ul class="submenu">
+          <li>
+            <a href="/html/basicsPprogramming.html"
+              >Основы программирования (Python, JavaScript, C#)</a
+            >
+          </li>
+          <li>
+            <a href="/html/webDevelopmentAdult.html"
+              >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
+            >
+          </li>
+          <li>
+            <a href="/html/dataAnalysis.html"
+              >Анализ данных и машинное обучение</a
+            >
+          </li>
+          <li>
+            <a href="/html/AutomationDevOps.html">Автоматизация и DevOps</a>
+          </li>
+          <li>
+            <a href="/html/mobileApplication.html"
+              >Разработка мобильных приложений</a
+            >
+          </li>
+          <li>
+            <a href="/html/CybersecuritySoftware.html"
+              >Кибербезопасность и ПО</a
+            >
+          </li>
         </ul>
-        <ul class="submenu-container">
-            <li class="dropdown">
-                <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
-                <ul class="submenu">
-                    <li><a href="/html/basicsPprogramming.html">Основы программирования (Python, JavaScript, C#)</a></li>
-                    <li><a href="/html/webDevelopmentAdult.html">Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a></li>
-                    <li><a href="/html/dataAnalysis.html">Анализ данных и машинное обучение</a></li>
-                    <li><a href="/html/AutomationDevOps.html">Автоматизация и DevOps</a></li>
-                    <li><a href="/html/mobileApplication.html">Разработка мобильных приложений</a></li>
-                    <li><a href="/html/CybersecuritySoftware.html">Кибербезопасность и ПО</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="/html/courseskid.html">Курсы для детей ▾</a>
-                <ul class="submenu">
-                    <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
-                    <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
-                    <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
-                    <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
-                    <li><a href="/html/python.html">Программирование на Python</a></li>
-                </ul>
-            </li>
+      </li>
+      <li class="dropdown">
+        <a href="/html/courseskid.html">Курсы для детей ▾</a>
+        <ul class="submenu">
+          <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+          <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+          <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+          <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+          <li><a href="/html/python.html">Программирование на Python</a></li>
         </ul>
-    </div>
-    <div class="signup-button">
-        <a href="/#SignUp" class="signup-btn">Записаться</a>
-    </div>
-    <div class="burger-menu" onclick="toggleMenu()">
-        ☰
-    </div>
-  </nav>
+      </li>
+    </ul>
+  </div>
+  <div class="signup-button">
+    <a href="/#SignUp" class="signup-btn">Записаться</a>
+  </div>
+  <div class="burger-menu" onclick="toggleMenu()">
+    <span class="burger-icon">☰</span>
+    <span class="close-icon">✖</span>
+  </div>
+</nav>
 
-  <script>
-    function toggleMenu() {
-      let menu = document.querySelector(".menu-container");
-      let body = document.querySelector("body");
-      let burgerIcon = document.querySelector(".burger-icon");
-      let closeIcon = document.querySelector(".close-icon");
-  
-      // Проверяем, что элементы найдены
-      if (!burgerIcon || !closeIcon) {
-          console.error("Burger or close icon not found!");
-          return;
-      }
-  
-      menu.classList.toggle("active");
-      if (menu.classList.contains("active")) {
-          console.log("Menu opened, showing close icon");
-          body.style.overflow = "hidden";
-          burgerIcon.style.display = "none"; // Скрываем бургер
-          closeIcon.style.display = "block"; // Показываем крестик
-      } else {
-          console.log("Menu closed, showing burger icon");
-          body.style.overflow = "auto";
-          burgerIcon.style.display = "block"; // Показываем бургер
-          closeIcon.style.display = "none"; // Скрываем крестик
-      }
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".menu-container");
+    const body = document.body;
+    const burgerIcon = document.querySelector(".burger-icon");
+    const closeIcon = document.querySelector(".close-icon");
+
+    if (!burgerIcon || !closeIcon || !menu) return;
+
+    const isActive = menu.classList.toggle("active");
+    body.classList.toggle("no-scroll", isActive);
+    burgerIcon.style.display = isActive ? "none" : "inline";
+    closeIcon.style.display = isActive ? "inline" : "none";
   }
-  </script>
+  window.addEventListener("resize", () => {
+    const menu = document.querySelector(".menu-container");
+    const body = document.body;
+    const burgerIcon = document.querySelector(".burger-icon");
+    const closeIcon = document.querySelector(".close-icon");
+
+    if (window.innerWidth > 768) {
+      menu.classList.remove("active");
+      body.classList.remove("no-scroll");
+      if (burgerIcon && closeIcon) {
+        burgerIcon.style.display = "inline";
+        closeIcon.style.display = "none";
+      }
+    }
+  });
+</script>
+
     <main>
       <div class="modal-overlay modal_closed" id="modal-overlay"></div>
       <div class="modal-overlay modal_closed" id="modal-overlay_1"></div>
