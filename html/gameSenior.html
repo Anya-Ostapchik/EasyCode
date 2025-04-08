@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Raleway:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/coursesPages.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <title>Разработка игр Senior</title>
 </head>
 <body>
@@ -54,7 +54,7 @@
     </div>
   </nav>
 
-  <script>
+  <script defer>
     function toggleMenu() {
       let menu = document.querySelector(".menu-container");
       let body = document.querySelector("body");
@@ -276,7 +276,7 @@
         </div>
       </footer>
     
-    <script>
+    <script defer>
         const phoneInputField1 = document.querySelector("#phone__trial");
         const phoneInput1 = window.intlTelInput(phoneInputField1, {
             preferredCountries: ["ru", "by", "kz"],
@@ -286,6 +286,6 @@
             "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         });
     </script>
-    <script src="/script/trialLesson.js"></script>
+    <script defer src="/script/trialLesson.js"></script>
 </body>
 </html>

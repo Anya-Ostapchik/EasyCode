@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/ourPrepodsPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <title>Преподаватели</title>
 </head>
 <body>
@@ -51,7 +51,7 @@
     </div>
   </nav>
 
-  <script>
+  <script defer>
     function toggleMenu() {
       let menu = document.querySelector(".menu-container");
       let body = document.querySelector("body");
@@ -234,7 +234,7 @@
             </div>
           </footer>
     
-    <script>
+    <script defer>
         const phoneInputField = document.querySelector("#phone");
         const phoneInput = window.intlTelInput(phoneInputField, {
             preferredCountries: ["ru", "by", "kz"],
@@ -244,7 +244,7 @@
             "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         });
     </script>
-    <script src="/script/script.js"></script>
-    <script src="/script/submitApplication.js"></script>
+    <script defer src="/script/script.js"></script>
+    <script defer src="/script/submitApplication.js"></script>
 </body>
 </html>
