@@ -1,564 +1,601 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="/styles/result.css">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
- <title>Страница благодарности</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/result.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Страница благодарности</title>
 </head>
 
 <body>
 <nav class="navbar">
- <div class="menu-container">
- <ul class="menu">
- <li><a href="/index.html">Главная</a></li>
- <li><a href="/html/about.html">О нас</a></li>
- <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
- <li><a href="/index.html#answers">FAQ</a></li>
- <li><a href="/index.html#reviews">Отзывы</a></li>
- <li><a href="/index.html#contacts">Контакты</a></li>
-</ul>
- <ul class="submenu-container">
- <li class="dropdown">
- <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
-<ul class="submenu">
- <li><a href="/html/basicsPprogramming.html">Основы программирования (Python, JavaScript, C#)</a></li>
- <li><a href="/html/webDevelopmentAdult.html">Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a></li>
- <li><a href="/html/dataAnalysis.html">Анализ данных и машинное обучение</a></li>
- <li><a href="/html/AutomationDevOps.html">Автоматизация и DevOps</a></li>
- <li><a href="/html/mobileApplication.html">Разработка мобильных приложений</a></li>
- <li><a href="/html/CybersecuritySoftware.html">Кибербезопасность и ПО</a></li>
- </ul>
- </li>
- <li class="dropdown">
- <a href="/html/courseskid.html">Курсы для детей ▾</a>
-<ul class="submenu">
- <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
- <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
- <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
- <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
- <li><a href="/html/python.html">Программирование на Python</a></li>
- </ul>
- </li>
-</ul>
- </div>
- <div class="signup-button">
-<a href="/#SignUp" class="signup-btn">Записаться</a>
- </div>
- <div class="burger-menu" onclick="toggleMenu()">
-☰
- </div>
+  <a class="navbar-logo" href="/">EasyCode</a>
+  <div class="menu-container">
+    <ul class="menu">
+      <li><a href="/index.html">Главная</a></li>
+      <li><a href="/html/about.html">О нас</a></li>
+      <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
+      <li><a href="/index.html#answers">FAQ</a></li>
+      <li><a href="/index.html#reviews">Отзывы</a></li>
+      <li><a href="/index.html#contact">Контакты</a></li>
+    </ul>
+    <ul class="submenu-container">
+      <li class="dropdown">
+        <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
+        <ul class="submenu">
+          <li>
+            <a href="/html/basicsPprogramming.html"
+              >Основы программирования (Python, JavaScript, C#)</a
+            >
+          </li>
+          <li>
+            <a href="/html/webDevelopmentAdult.html"
+              >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
+            >
+          </li>
+          <li>
+            <a href="/html/dataAnalysis.html"
+              >Анализ данных и машинное обучение</a
+            >
+          </li>
+          <li>
+            <a href="/html/AutomationDevOps.html">Автоматизация и DevOps</a>
+          </li>
+          <li>
+            <a href="/html/mobileApplication.html"
+              >Разработка мобильных приложений</a
+            >
+          </li>
+          <li>
+            <a href="/html/CybersecuritySoftware.html"
+              >Кибербезопасность и ПО</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="/html/courseskid.html">Курсы для детей ▾</a>
+        <ul class="submenu">
+          <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+          <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+          <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+          <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+          <li><a href="/html/python.html">Программирование на Python</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="signup-button">
+    <a href="/#SignUp" class="signup-btn">Записаться</a>
+  </div>
+  <div class="burger-menu" onclick="toggleMenu()">
+    <span class="burger-icon">☰</span>
+    <span class="close-icon">✖</span>
+  </div>
 </nav>
 
 <script defer>
-function toggleMenu() {
-let menu = document.querySelector(".menu-container");
-let body = document.querySelector("body");
-let burgerIcon = document.querySelector(".burger-icon");
-let closeIcon = document.querySelector(".close-icon");
+  function toggleMenu() {
+    const menu = document.querySelector(".menu-container");
+    const body = document.body;
+    const burgerIcon = document.querySelector(".burger-icon");
+    const closeIcon = document.querySelector(".close-icon");
 
-// Проверяем, что элементы найдены
-if (!burgerIcon || !closeIcon) {
-console.error("Burger or close icon not found!");
-return;
-}
+    if (!burgerIcon || !closeIcon || !menu) return;
 
-menu.classList.toggle("active");
-if (menu.classList.contains("active")) {
-console.log("Menu opened, showing close icon");
-body.style.overflow = "hidden";
-burgerIcon.style.display = "none"; // Скрываем бургер
-closeIcon.style.display = "block"; // Показываем крестик
-} else {
-console.log("Menu closed, showing burger icon");
-body.style.overflow = "auto";
-burgerIcon.style.display = "block"; // Показываем бургер
-closeIcon.style.display = "none"; // Скрываем крестик
-}
-}
+    const isActive = menu.classList.toggle("active");
+    body.classList.toggle("no-scroll", isActive);
+    burgerIcon.style.display = isActive ? "none" : "inline";
+    closeIcon.style.display = isActive ? "inline" : "none";
+  }
+  window.addEventListener("resize", () => {
+    const menu = document.querySelector(".menu-container");
+    const body = document.body;
+    const burgerIcon = document.querySelector(".burger-icon");
+    const closeIcon = document.querySelector(".close-icon");
+
+    if (window.innerWidth > 768) {
+      menu.classList.remove("active");
+      body.classList.remove("no-scroll");
+      if (burgerIcon && closeIcon) {
+        burgerIcon.style.display = "inline";
+        closeIcon.style.display = "none";
+      }
+    }
+  });
 </script>
- <div class="modal-overlay modal_closed" id="modal-overlay"></div>
- <a href="#" class="modal-trial-lesson__close modal_closed" id="modal-close" title="Закрыть модальное окно">x</a>
+      
+    <div class="modal-overlay modal_closed" id="modal-overlay"></div>
+    <a href="#" class="modal-trial-lesson__close modal_closed" id="modal-close" title="Закрыть модальное окно">x</a>
 
- <div class="modal-trial-lesson modal_closed" id="modal-trial-lesson">
-<h2 class="modal-trial-lesson__title">Запишитесь на<span class="blue">бесплатный</span> урок</h2>
-<p class="modal-trial-lesson__txt_1">Оставьте заявку и наши менеджеры согласуют с Вами удобное время</p>
+    <div class="modal-trial-lesson modal_closed" id="modal-trial-lesson">
+        <h2 class="modal-trial-lesson__title">Запишитесь на <span class="blue">бесплатный</span> урок</h2>
+        <p class="modal-trial-lesson__txt_1">Оставьте заявку и наши менеджеры согласуют с Вами удобное время</p>
 
-<form action="" method="post" id="trial__form">
- <input class="modal-trial-lesson__input" type="text" id="name" placeholder="Как вас зовут?">
- <input class="modal-trial-lesson__input" type="tel" id="phone__trial" name="request">
- <span class="phone__txt-trial phone__txt_del" id="phone__txt-trial">*Введите корректный номер телефона</span>
- <button class="modal-trial-lesson__btn submit-trial-lesson" id="trial__btn" type="submit">Записаться на бесплатный урок</button>
-</form>
+        <form action="" method="post" id="trial__form">
+            <input class="modal-trial-lesson__input" type="text" id="name" placeholder="Как вас зовут?">
+            <input class="modal-trial-lesson__input" type="tel" id="phone__trial" name="request">
+            <span class="phone__txt-trial phone__txt_del" id="phone__txt-trial">*Введите корректный номер телефона</span>
+            <button class="modal-trial-lesson__btn submit-trial-lesson" id="trial__btn" type="submit">Записаться на бесплатный урок</button>
+        </form>
 
-<div class="modal-trial-lesson__done done_close" id="trial__done">
-Спасибо! Данные успешно отправлены.
+        <div class="modal-trial-lesson__done done_close" id="trial__done">
+            Спасибо! Данные успешно отправлены.
+        </div>
+
+        <p class="modal-trial-lesson__txt_2">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности</a></p>
+    </div>
+
+    <div class="conteiner grey-bg first-section">
+        <section class="main">
+            <h2 class="main__title_dop">Есть ли у Вашего ребенка склонность к IT?</h2>
+            <div class="main__desc-wrap">
+                <div class="main__desc">
+                    <h2 class="main__title">Есть ли у Вашего ребенка склонность к IT?</h2>
+                    <p class="main__text">Разработчик — одна из самых высокооплачиваемых и востребованных профессий в мире!
+                    </p>
+                    <a href="#result" class="main__btn">Узнать результаты</a>
+                </div>
+                <div class="main__img">
+                    <img src="/imgs/result.webp" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="conteiner">
+        <section class="result" id="result">
+            <h2 class="result__title">Результаты Вашего тестирования:</h2>
+            <div class="result__wrap">
+                <div class="result__img">
+                    <img src="/imgs/result__test.webp" alt="">
+                </div>
+                <div class="result__desc">
+                    <p class="result__text">Судя по результатам теста, который Вы прошли, можно с уверенностью сказать, что
+                        у Вашего ребенка есть серьезные задатки к тому, чтобы построить успешную карьеру в IT.</p>
+                    <p class="result__text">Игнорировать такой талант нельзя, поэтому <span class="blue">мы дарим Вам
+                            бесплатный ознакомительный урок по программированию</span></p>
+                    <a href="#" class="result__btn">Забрать подарок</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="conteiner grey-bg">
+
+        <section class="first-lesson">
+            <h2 class="first-lesson__title">На пробном ознакомительном уроке Ваш ребенок:</h2>
+            <div class="first-lesson__wrap">
+                <div class="first-lesson__nums">
+                    <div class="first-lesson__num">
+                        <img src="/imgs/one.png" alt="">
+                        <p>Познакомиться с основами программирования</p>
+                    </div>
+                    <div class="first-lesson__num">
+                        <img src="/imgs/two.png" alt="">
+                        <p>Создаст свою первую игру или мобильное приложение</p>
+                    </div>
+                    <div class="first-lesson__num">
+                        <img src="/imgs/three.png" alt="">
+                        <p>Поймет интересно ли ему заниматься программированием</p>
+                    </div>
+                </div>
+                <p class="first-lesson__text">В качестве бонуса, на бесплатном ознакомительном уроке <span class="blue">мы подарим Вам полезные материалы</span>, составленные нашими педагогами и психологами:</p>
+                <div class="first-lesson__bonuses">
+                    <div class="first-lesson__bonus">
+                        <img src="/imgs/box.webp" alt="">
+                        <p>Как <span class="blue">привить ребенку мотивацию к учебе,</span> чтобы он сам захотел обучаться?</p>
+                    </div>
+                    <div class="first-lesson__bonus">
+                        <img src="/imgs/box.webp" alt="">
+                        <p>Как научить ребенка проводить время <span class="blue"> за компьютером </span> и телефоном <span class="blue">с пользой?</span></p>
+                    </div>
+                    <div class="first-lesson__bonus">
+                        <img src="/imgs/box.webp" alt="">
+                        <p>10 профессий, которые будут <span class="blue">наиболее востребованы</span> к 2030 году.</p>
+                    </div>
+                </div>
+                <a href="#" class="first-lesson__btn">Получить бонусы</a>
+            </div>
+            
+        </section>
+    </div>
+    <div class="conteiner">
+        <section class="why-lesson">
+            <h2 class="why-lesson__title">Почему Вам стоит посетить бесплатный ознакомительный урок?</h2>
+            <div class="why-lesson__blocks">
+                <div class="why-lesson__block grey-bg">
+                    <div>
+                        <img src="/imgs/result1.png" alt="">
+                        <h4>На пробном уроке мы выдадим Вам бесплатные, полезные материалы, составленные нашими
+                            педагагоми и привлеченными психологами, которые:</h4>
+                    </div>
+                    <ul>
+                        <li>Расскажут о 10 наиболее популярных профессиях в ближайшем будущем</li>
+                        <li>Помогут привить ребенку мотивацию и желание обучаться</li>
+                        <li>Поделимся секретами, благодаря которым Ваш ребенок начнет с пользой проводить время за
+                            компьютером, а не только играть в игры.</li>
+                    </ul>
+                </div>
+                <div class="why-lesson__block grey-bg">
+                    <div>
+                        <img src="/imgs/result2.png" alt="">
+                        <h4>Наверняка, Вам знакома ситуация, в которой Ваш ребенок целый день просидел за компьютером,
+                            играя в игрушки?</h4>
+                    </div>
+                    <p>Благодаря новому интересу, а именно — программированию, ребенок начнет с пользой проводить время
+                        за компьютером. <strong>Создавать игры, а не играть в них для него будет куда
+                            интереснее</strong></p>
+                </div>
+                <div class="why-lesson__block grey-bg">
+                    <div>
+                        <img src="/imgs/result3.png" alt="">
+                        <h4>‌Школьная успеваемость детей, прошедших наши курсы выросла на 32%</h4>
+                    </div>
+                    <p>Благодаря игровому формату обучения, мы покажем на практике, что учеба — это интересно! У Вашего
+                        ребенка появится мотивация обучаться не только на наших программах, но и в школе!</p>
+                </div>
+                <div class="why-lesson__block grey-bg">
+                    <div>
+                        <img src="/imgs/result4.png" alt="">
+                        <h4>Мы вместе с Вами создадим лучшее будущее для Вашего ребенка!</h4>
+                    </div>
+                    <p>Каждый родитель по-своему переживает за будущее ребенка и хочет сделать так, чтобы он вырос
+                        самостоятельным, нашел хорошую работу и построил семью.</p>
+                    <p>Если с детства привить ребенку навыки разработчика, то в будущем у него будут все шансы обрести
+                        востребованную и высокооплачиваемую работу!</p>
+                    <p>Х‌ороших специалисты на вес золота, работать можно удаленно, а средняя зарплата разработчика в
+                        России от 200,000 руб.</p>
+                </div>
+            </div>
+            <p class="why-lesson__text">Даже если Вы пока не планируете отдавать ребенка на курсы по программированию,
+                <span class="blue">обязательно посетите бесплатный пробный урок!</span> </p>
+        </section>
+    </div>
+    <div class="conteiner grey-bg">
+        <section class="sign-up">
+            <p class="sign-up__title">
+                Не будет лучшего момента, чем сейчас, чтобы позаботиться о <span class="blue">будущем Вашего ребенка.</span>
+            </p>
+            <p class="sign-up__text">
+                Познакомив ребенка с IT сферой сейчас, вы подарите ему возможность стать востребованным и высокооплачиваемым специалистом, за что он будет благодарен Вам!
+            </p>
+            <a href="#" class="sign-up__btn trial-lesson">Записаться на пробный урок</a>
+        </section>
+    </div>
+    <div class="conteiner">
+        <section class="directions ">
+            <p class="directions__title">Вашему ребенку <span class="blue">подойдут</span> следующие <span class="blue">три направления</span> по программированию:</p>
+            <div class="directions__blocks">
+                <div class="directions__block">
+                    <div class="directions__img">
+                        <img src="/imgs/HTML.webp" alt="">
+                    </div>
+                    <div class="directions__desc">
+                        <h4>WEBSITE DEVELOPMENT</h4>
+                        <p>На курсе Web-разработка сайтов ребята научится работать с 3 языками: HTML, CSS, Java Script. Научатся работать в редакторах Figma, Tilda и по итогам создадут свой полноценный с необходимыми разделами, анимацией и смогут начать работать как фрилансеры.</p>
+                    </div>
+                </div>
+                <div class="directions__block">
+                    <div class="directions__img">
+                        <img src="/imgs/roblox.webp" alt="">
+                    </div>
+                    <div class="directions__desc">
+                        <h4>ROBLOX STUDIO</h4>
+                        <p>Участники курса научатся создавать игровые миры и игры на платформе Roblox Studio. Ребята познакомятся с понятием дизайна и 3D-моделированием, физикой игровых объектов, созданием и настраиванием спецэффектов в Roblox Studio.</p>
+                    </div>
+                </div>
+                <div class="directions__block">
+                    <div class="directions__img">
+                        <img src="/imgs/python.jpg" alt="">
+                    </div>
+                    <div class="directions__desc">
+                        <h4>PYTHON</h4>
+                        <p>На Python пишут веб-приложения и нейросети, проводят научные вычисления и автоматизируют процессы. Язык просто выучить, даже если вы никогда не программировали. На курсе вы создадите Telegram-бота, полноценный магазин и задачник для портфолио, а Центр карьеры поможет найти работу Python-разработчиком.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="directions__text">На бесплатном ознакомительном уроке, наш специалист проведет более точную диагностику и определит какое из направлений больше подходит Вашему ребенку</p>
+            <a href="#" class="directions__btn trial-lesson">Записаться на пробный урок</a>
+        </section>
+    </div>
+    <div class="conteiner grey-bg">
+        <section class="how-lesson">
+            <h2 class="how-lesson__title">Как проходят занятия?</h2>
+            <div class="how-lesson__blocks">
+                <div class="how-lesson__block">
+                    <div>
+                        <img src="/imgs/result5.webp" alt="">
+                        <p>Мини-группы от 6 человек</p>
+                    </div>
+                    <p>Дети в ходе обучения будут соревноваться, совместно создавать проекты и развивать навыки общения.</p>
+                </div>
+                <div class="how-lesson__block">
+                    <div>
+                        <img src="/imgs/result6.webp" alt="">
+                        <p>Длительность уроков 90 минут</p>
+                    </div>
+                    <p>Также предусмотрены два перерыва по 5 минут, во время которых мы общаемся и проводим викторины.</p>
+                </div>
+                <div class="how-lesson__block">
+                    <div>
+                        <img src="/imgs/result7.webp" alt="">
+                        <p>Занятия в удобное время</p>
+                    </div>
+                    <p>Время проведения каждого урока согласовывается с Вами заранее. Уроки проходят в удобное Вам и Вашему ребенку время.</p>
+                </div>
+                <div class="how-lesson__block">
+                    <div>
+                        <img src="/imgs/result8.webp" alt="">
+                        <p>Ребенок сам захочет учиться</p>
+                    </div>
+                    <p>Каждое занятие безумно интересное и увлекательное. Вам не придется заставлять учиться Вашего ребенка - ему это будет нравиться!</p>
+                </div>
+                <div class="how-lesson__block">
+                    <div>
+                        <img src="/imgs/result9.webp" alt="">
+                        <p>Персональные уроки 1 на 1</p>
+                    </div>
+                    <p>Индивидуальный подход к обучению по проверенным программам. Уроки от 50 до 90 минут.</p>
+                </div>
+            </div>
+            <img src="/imgs/robot1.webp" alt="">
+        </section>
+    </div>
+    <div class="conteiner">
+        <section class="teacher">
+            <h2 class="teacher__title">Кто будет Вашим преподавателем?</h2>
+            <div class="teacher__content">
+                <div class="teacher__img">
+                    <img src="/imgs/prepod.webp" alt="">
+                    <h4>Александр</h4>
+                    <p>Самый востребованный педагог школы. Более 250 детей прошло обучение. Говорит с ребятами на одном языке.</p>
+                    <svg>
+                        <use href="/sprite.svg#result__arrow"></use>
+                    </svg>
+                </div>
+                <div class="teacher__desc">
+                    <div class="teacher__text">
+                        <p>Вам будет выделен <span class="blue">1 из 23</span> сильнейших преподавателей школы EasyCode, который проведет первое пробное занятие.</p>
+                        <p>Прошло обучение: более 253 детей<br>Стаж работы: 6 лет</p>
+                    </div>
+                </div>
+                <img src="/imgs/robot2.webp" alt="">
+            </div>
+        </section>
+    </div>
+    <div class="conteiner grey-bg">
+        <section class="reviews">
+            <h2 class="reviews__title">Отзывы родителей, чьи дети обучаются на наших программах</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <img src="/imgs/parent.webp" alt="">
+                                <div>
+                                    <p>Добрый день. Очень рады что попали в вашу школу. Школа отличная! Высококвалифицированный преподаватель, умеющий заинтересовать ученика. Очень интересные уроки.</p>
+                                    <p>Я в программировании ничего не понимаю, но ребёнок очень доволен. Всего за несколько занятий, уже много чему научился. Будем продолжать обучение. И отдельное спасибо менеджеру и службе поддержки, всегда на связи. Всё просто отлично!</p>
+                                </div>
+                                <h4>Наталья Орлова</h4>
+                                <span>7 февраля 2022 года</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <img src="/imgs/parent.webp" alt="">
+                                <div>
+                                    <p>Добрый день. Очень рады что попали в вашу школу. Школа отличная! Высококвалифицированный преподаватель, умеющий заинтересовать ученика. Очень интересные уроки.</p>
+                                    <p>Я в программировании ничего не понимаю, но ребёнок очень доволен. Всего за несколько занятий, уже много чему научился. Будем продолжать обучение. И отдельное спасибо менеджеру и службе поддержки, всегда на связи. Всё просто отлично!</p>
+                                </div>
+                                <h4>Наталья Орлова</h4>
+                                <span>7 февраля 2022 года</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <img src="/imgs/parent.webp" alt="">
+                                <div>
+                                    <p>Добрый день. Очень рады что попали в вашу школу. Школа отличная! Высококвалифицированный преподаватель, умеющий заинтересовать ученика. Очень интересные уроки.</p>
+                                    <p>Я в программировании ничего не понимаю, но ребёнок очень доволен. Всего за несколько занятий, уже много чему научился. Будем продолжать обучение. И отдельное спасибо менеджеру и службе поддержки, всегда на связи. Всё просто отлично!</p>
+                                </div>
+                                <h4>Наталья Орлова</h4>
+                                <span>7 февраля 2022 года</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-item">
+                                <img src="/imgs/parent.webp" alt="">
+                                <div>
+                                    <p>Добрый день. Очень рады что попали в вашу школу. Школа отличная! Высококвалифицированный преподаватель, умеющий заинтересовать ученика. Очень интересные уроки.</p>
+                                    <p>Я в программировании ничего не понимаю, но ребёнок очень доволен. Всего за несколько занятий, уже много чему научился. Будем продолжать обучение. И отдельное спасибо менеджеру и службе поддержки, всегда на связи. Всё просто отлично!</p>
+                                </div>
+                                <h4>Наталья Орлова</h4>
+                                <span>7 февраля 2022 года</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+        </section>
+    </div>
+    <div class="conteiner">
+        <section class="about">
+            <div class="about__content">
+                <div class="about__img">
+                    <img src="/imgs/robot3.webp" alt="">
+                </div>
+                <div class="about__desc">
+                    <h2 class="about__title">О компании</h2>
+                    <p>Обучаем детей новым трендовым профессиям в области программирования и вместе с родителями создаем для них лучшее будущее!</p>
+                    <p>Наша миссия - показать детям и родителям, что образование может быть интересным, увлекательным, при этом более качественным, чем то, что нам предлагают школы и университеты</p>
+                    <p>Мы покажем Вашему ребенку, что учиться - это круто! Успеваемость Вашего ребенка вырастет, а время за компьютером он начнет проводить с пользой!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="conteiner">
+        <section class="answers">
+            <h2 class="answers__title">Ответы на вопросы</h2>
+            <div class="faq">
+                <div class="faq__item">
+                    <button class="collapsible">Как я смогу отследить прогресс ребенка?</button>
+                    <div class="faq__content">
+                      <p>Занятия практические, наглядный результат обучения - конкретные проекты, которые создают ребята. Кроме того преподаватель всегда на связи с родителем и каждые 8 уроков делает персональный отчет по каждому ученику.</p>
+                    </div>
+                    <button class="collapsible">В какое время можно заниматься?</button>
+                    <div class="faq__content">
+                      <p>Мы работаем круглосуточно 7 дней в неделю, и у нас более 100 групп, к которым можно присоединиться. Если ни одна из них не подойдёт, то мы откроем новую группу, ориентируясь на ваше расписание. <br><br>Сами занятия проходят раз в неделю в удобное для Вас время.</p>
+                    </div>
+                    <button class="collapsible">Это вебинар или онлайн-занятие?</button>
+                    <div class="faq__content">
+                      <p>На всех занятиях преподаватель работает с учениками в режиме реального времени. Это не запись видеоурока.</p>
+                    </div>
+                    <button class="collapsible">Как начать учиться?</button>
+                    <div class="faq__content">
+                      <p>Оставьте заявку на сайте.<br>Мы поможем определить подходящие условия обучения. <br>
+                        Проведём пробный урок, чтобы ваш ребёнок попробовал программировать и понял, подходят ли ему такие дополнительные занятия. <br>
+                        Определим время обучения, которое наиболее удобно для Вас. <br>
+                        Ваш ребёнок начнёт заниматься.</p>
+                    </div>
+                    <button class="collapsible">Другие вопросы:</button>
+                    <div class="faq__content">
+                      <p>
+                        <strong>Что необходимо для начала занятий?</strong><br>
+                        Ноутбук или компьютер. Мы предоставляем все материалы для уроков. Перед курсом ученики получают простые инструкции, как подготовиться к уроку и установить программное обеспечение. В случае трудностей наша служба технической поддержки и учителя всегда оперативно помогут. <br><br>
+                        <strong>Нужно ли устанавливать дополнительные программы?</strong><br>
+                        
+                        Часть заданий проходит в онлайн-программах, в которых необходимо только зарегистрироваться. Если программу потребуется установить, мы отправим вам подробную инструкцию. Наш технический специалист обязательно вам поможет, если возникнут какие-либо трудности. <br><br>
+                        <strong>На какой платформе проходят занятия?</strong><br>
+                        
+                        Занятия проходят на нашей платформе в браузере Google Chrome на компьютере или ноутбуке. Планшета или телефона для занятий недостаточно, так как используются профессиональные программы для работы.<br><br>
+                        <strong>Что если ребёнку будет недостаточно нагрузки на занятиях?</strong><br>
+                        
+                        Педагог может назначить дополнительные задания на уроке и более сложную домашнюю работу. Кроме того, мы можем перевести его в группу, в которой занимаются более сильные ребята.<br><br>
+                        <strong>Как преподаватель увидит, какие действия совершает ученик?</strong><br>
+                        
+                        Во время занятия дети демонстрируют свой рабочий стол, и преподаватель следит за выполнением всех заданий. Так как группы небольшие, то внимания хватит каждому ребенку.<br><br>
+                        <strong>Что делать, если мы уедем в отпуск или ребенок заболеет?</strong><br>
+                        
+                        Если вы пропустили урок или даже несколько занятий по любой причине, мы назначим вам отработку с преподавателем, чтобы вы смогли догнать группу. Если же догнать не получается, то мы переводим в другую группу или собираем под вас новую, и вы продолжаете занятия с того момента, где остановились, в удобное время.<br><br>
+                        <strong>Будут ли записи занятий?</strong><br>
+                        
+                        Мы делаем запись каждого занятия, чтобы вы могли пересмотреть урок для разбора сложной темы. Но если вы пропустили урок или даже несколько занятий по любой причине, мы назначим вам отработку с преподавателем, чтобы вы смогли догнать группу.<br><br>
+                        <strong>Сколько раз в неделю будут идти занятия?</strong><br>
+                        
+                        Есть 2 формата занятий: индивидуальное обучение и групповые. В групповом формате обычно занимаемся 1 или 2 раза в неделю.<br><br>
+                        <strong>Можно изменить график занятий после того, как ребенок начал занятие на курсе?</strong><br>
+                        
+                        Да, можно. В нашей школе более 100 групп и есть возможность заниматься индивидуально. Вы можете перейти в любой момент в другую группу по любой причине (не подходит время, не устраивает преподаватель, не хватает нагрузки или она большая и т.д.)
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="conteiner purple-bg">
+        <section class="connect">
+            <div class="connect__img">
+                <img src="/imgs/result0.webp" alt="">
+            </div>
+            <div class="connect__desc">
+                <div class="connect__wrap">
+                    <p>Связаться с нами:</p>
+                    <a href="tel:+88007071754">8 800 707 17 54</a>
+                    <p>Или напишите нам:</p>
+                    <div class="connect__social">
+                        <svg>
+                            <use href="/sprite.svg#whatsapp"></use>
+                        </svg>
+                        <svg>
+                            <use href="/sprite.svg#vk"></use>
+                        </svg>
+                        <svg>
+                            <use href="/sprite.svg#tg"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </div>
-
-<p class="modal-trial-lesson__txt_2">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c<a href="#">политикой конфиденциальности</a></p>
- </div>
-
- <div class="conteiner grey-bg first-section">
-<section class="main">
- <h2 class="main__title_dop">Есть ли у Вашего ребенка склонность к IT?</h2>
- <div class="main__desc-wrap">
- <div class="main__desc">
- <h2 class="main__title">Есть ли у Вашего ребенка склонность к IT?</h2>
- <p class="main__text">Разработчик — одна из самых высокооплачиваемых и востребованных профессий в мире!
- </p>
- <a href="#result" class="main__btn">Узнать результаты</a>
- </div>
- <div class="main__img">
- <img loading="lazy" src="/imgs/result.webp" alt="">
- </div>
- </div>
-</section>
- </div>
- <div class="conteiner">
-<section class="result" id="result">
- <h2 class="result__title">Результаты Вашего тестирования:</h2>
- <div class="result__wrap">
- <div class="result__img">
- <img loading="lazy" src="/imgs/result__test.webp" alt="">
- </div>
- <div class="result__desc">
- <p class="result__text">Судя по результатам теста, который Вы прошли, можно с уверенностью сказать, что
-у Вашего ребенка есть серьезные задатки к тому, чтобы построить успешную карьеру в IT.</p>
- <p class="result__text">Игнорировать такой талант нельзя, поэтому<span class="blue">мы дарим Вам
-бесплатный ознакомительный урок по программированию</span></p>
- <a href="#" class="result__btn">Забрать подарок</a>
- </div>
- </div>
-</section>
- </div>
- <div class="conteiner grey-bg">
-
-<section class="first-lesson">
- <h2 class="first-lesson__title">На пробном ознакомительном уроке Ваш ребенок:</h2>
- <div class="first-lesson__wrap">
- <div class="first-lesson__nums">
- <div class="first-lesson__num">
- <img loading="lazy" src="/imgs/one.png" alt="">
- <p>Познакомиться с основами программирования</p>
- </div>
- <div class="first-lesson__num">
- <img loading="lazy" src="/imgs/two.png" alt="">
- <p>Создаст свою первую игру или мобильное приложение</p>
- </div>
- <div class="first-lesson__num">
- <img loading="lazy" src="/imgs/three.png" alt="">
- <p>Поймет интересно ли ему заниматься программированием</p>
- </div>
- </div>
- <p class="first-lesson__text">В качестве бонуса, на бесплатном ознакомительном уроке<span class="blue">мы подарим Вам полезные материалы</span>, составленные нашими педагогами и психологами:</p>
- <div class="first-lesson__bonuses">
- <div class="first-lesson__bonus">
- <img loading="lazy" src="/imgs/box.webp" alt="">
- <p>Как<span class="blue">привить ребенку мотивацию к учебе,</span> чтобы он сам захотел обучаться?</p>
- </div>
- <div class="first-lesson__bonus">
- <img loading="lazy" src="/imgs/box.webp" alt="">
- <p>Как научить ребенка проводить время<span class="blue"> за компьютером</span> и телефоном<span class="blue">с пользой?</span></p>
- </div>
- <div class="first-lesson__bonus">
- <img loading="lazy" src="/imgs/box.webp" alt="">
- <p>10 профессий, которые будут<span class="blue">наиболее востребованы</span> к 2030 году.</p>
- </div>
- </div>
- <a href="#" class="first-lesson__btn">Получить бонусы</a>
- </div>
-
-</section>
- </div>
- <div class="conteiner">
-<section class="why-lesson">
- <h2 class="why-lesson__title">Почему Вам стоит посетить бесплатный ознакомительный урок?</h2>
- <div class="why-lesson__blocks">
- <div class="why-lesson__block grey-bg">
- <div>
- <img loading="lazy" src="/imgs/result1.png" alt="">
- <h4>На пробном уроке мы выдадим Вам бесплатные, полезные материалы, составленные нашими
-педагагоми и привлеченными психологами, которые:</h4>
- </div>
-<ul>
- <li>Расскажут о 10 наиболее популярных профессиях в ближайшем будущем</li>
- <li>Помогут привить ребенку мотивацию и желание обучаться</li>
- <li>Поделимся секретами, благодаря которым Ваш ребенок начнет с пользой проводить время за
-компьютером, а не только играть в игры.</li>
- </ul>
- </div>
- <div class="why-lesson__block grey-bg">
- <div>
- <img loading="lazy" src="/imgs/result2.png" alt="">
- <h4>Наверняка, Вам знакома ситуация, в которой Ваш ребенок целый день просидел за компьютером,
-играя в игрушки?</h4>
- </div>
- <p>Благодаря новому интересу, а именно — программированию, ребенок начнет с пользой проводить время
-за компьютером.<strong>Создавать игры, а не играть в них для него будет куда
-интереснее</strong></p>
- </div>
- <div class="why-lesson__block grey-bg">
- <div>
- <img loading="lazy" src="/imgs/result3.png" alt="">
- <h4>‌Школьная успеваемость детей, прошедших наши курсы выросла на 32%</h4>
- </div>
- <p>Благодаря игровому формату обучения, мы покажем на практике, что учеба — это интересно! У Вашего
-ребенка появится мотивация обучаться не только на наших программах, но и в школе!</p>
- </div>
- <div class="why-lesson__block grey-bg">
- <div>
- <img loading="lazy" src="/imgs/result4.png" alt="">
- <h4>Мы вместе с Вами создадим лучшее будущее для Вашего ребенка!</h4>
- </div>
- <p>Каждый родитель по-своему переживает за будущее ребенка и хочет сделать так, чтобы он вырос
-самостоятельным, нашел хорошую работу и построил семью.</p>
- <p>Если с детства привить ребенку навыки разработчика, то в будущем у него будут все шансы обрести
-востребованную и высокооплачиваемую работу!</p>
- <p>Х‌ороших специалисты на вес золота, работать можно удаленно, а средняя зарплата разработчика в
-России от 200,000 руб.</p>
- </div>
- </div>
- <p class="why-lesson__text">Даже если Вы пока не планируете отдавать ребенка на курсы по программированию,
- <span class="blue">обязательно посетите бесплатный пробный урок!</span></p>
-</section>
- </div>
- <div class="conteiner grey-bg">
-<section class="sign-up">
- <p class="sign-up__title">
-Не будет лучшего момента, чем сейчас, чтобы позаботиться о<span class="blue">будущем Вашего ребенка.</span>
- </p>
- <p class="sign-up__text">
-Познакомив ребенка с IT сферой сейчас, вы подарите ему возможность стать востребованным и высокооплачиваемым специалистом, за что он будет благодарен Вам!
- </p>
- <a href="#" class="sign-up__btn trial-lesson">Записаться на пробный урок</a>
-</section>
- </div>
- <div class="conteiner">
-<section class="directions ">
- <p class="directions__title">Вашему ребенку<span class="blue">подойдут</span> следующие<span class="blue">три направления</span> по программированию:</p>
- <div class="directions__blocks">
- <div class="directions__block">
- <div class="directions__img">
- <img loading="lazy" src="/imgs/HTML.webp" alt="">
- </div>
- <div class="directions__desc">
- <h4>WEBSITE DEVELOPMENT</h4>
- <p>На курсе Web-разработка сайтов ребята научится работать с 3 языками: HTML, CSS, Java Script. Научатся работать в редакторах Figma, Tilda и по итогам создадут свой полноценный с необходимыми разделами, анимацией и смогут начать работать как фрилансеры.</p>
- </div>
- </div>
- <div class="directions__block">
- <div class="directions__img">
- <img loading="lazy" src="/imgs/roblox.webp" alt="">
- </div>
- <div class="directions__desc">
- <h4>ROBLOX STUDIO</h4>
- <p>Участники курса научатся создавать игровые миры и игры на платформе Roblox Studio. Ребята познакомятся с понятием дизайна и 3D-моделированием, физикой игровых объектов, созданием и настраиванием спецэффектов в Roblox Studio.</p>
- </div>
- </div>
- <div class="directions__block">
- <div class="directions__img">
- <img loading="lazy" src="/imgs/python.jpg" alt="">
- </div>
- <div class="directions__desc">
- <h4>PYTHON</h4>
- <p>На Python пишут веб-приложения и нейросети, проводят научные вычисления и автоматизируют процессы. Язык просто выучить, даже если вы никогда не программировали. На курсе вы создадите Telegram-бота, полноценный магазин и задачник для портфолио, а Центр карьеры поможет найти работу Python-разработчиком.</p>
- </div>
- </div>
- </div>
- <p class="directions__text">На бесплатном ознакомительном уроке, наш специалист проведет более точную диагностику и определит какое из направлений больше подходит Вашему ребенку</p>
- <a href="#" class="directions__btn trial-lesson">Записаться на пробный урок</a>
-</section>
- </div>
- <div class="conteiner grey-bg">
-<section class="how-lesson">
- <h2 class="how-lesson__title">Как проходят занятия?</h2>
- <div class="how-lesson__blocks">
- <div class="how-lesson__block">
- <div>
- <img loading="lazy" src="/imgs/result5.webp" alt="">
- <p>Мини-группы от 6 человек</p>
- </div>
- <p>Дети в ходе обучения будут соревноваться, совместно создавать проекты и развивать навыки общения.</p>
- </div>
- <div class="how-lesson__block">
- <div>
- <img loading="lazy" src="/imgs/result6.webp" alt="">
- <p>Длительность уроков 90 минут</p>
- </div>
- <p>Также предусмотрены два перерыва по 5 минут, во время которых мы общаемся и проводим викторины.</p>
- </div>
- <div class="how-lesson__block">
- <div>
- <img loading="lazy" src="/imgs/result7.webp" alt="">
- <p>Занятия в удобное время</p>
- </div>
- <p>Время проведения каждого урока согласовывается с Вами заранее. Уроки проходят в удобное Вам и Вашему ребенку время.</p>
- </div>
- <div class="how-lesson__block">
- <div>
- <img loading="lazy" src="/imgs/result8.webp" alt="">
- <p>Ребенок сам захочет учиться</p>
- </div>
- <p>Каждое занятие безумно интересное и увлекательное. Вам не придется заставлять учиться Вашего ребенка - ему это будет нравиться!</p>
- </div>
- <div class="how-lesson__block">
- <div>
- <img loading="lazy" src="/imgs/result9.webp" alt="">
- <p>Персональные уроки 1 на 1</p>
- </div>
- <p>Индивидуальный подход к обучению по проверенным программам. Уроки от 50 до 90 минут.</p>
- </div>
- </div>
- <img loading="lazy" src="/imgs/robot1.webp" alt="">
-</section>
- </div>
- <div class="conteiner">
-<section class="teacher">
- <h2 class="teacher__title">Кто будет Вашим преподавателем?</h2>
- <div class="teacher__content">
- <div class="teacher__img">
- <img loading="lazy" src="/imgs/prepod.webp" alt="">
- <h4>Александр</h4>
- <p>Самый востребованный педагог школы. Более 250 детей прошло обучение. Говорит с ребятами на одном языке.</p>
- <svg>
- <use href="/sprite.svg#result__arrow"></use>
- </svg>
- </div>
- <div class="teacher__desc">
- <div class="teacher__text">
- <p>Вам будет выделен<span class="blue">1 из 23</span> сильнейших преподавателей школы EasyCode, который проведет первое пробное занятие.</p>
- <p>Прошло обучение: более 253 детей<br>Стаж работы: 6 лет</p>
- </div>
- </div>
- <img loading="lazy" src="/imgs/robot2.webp" alt="">
- </div>
-</section>
- </div>
- <div class="conteiner grey-bg">
-<section class="reviews">
- <h2 class="reviews__title">Отзывы родителей, чьи дети обучаются на наших программах</h2>
- <div class="swiper">
- <div class="swiper-wrapper">
- <div class="swiper-slide">
- <div class="swiper-item">
- <img loading="lazy" src="/imgs/parent.webp" alt="">
- <div>
- <p>Добрый день. Очень рады что попали в вашу школу. Школа отличная! Высококвалифицированный преподаватель, умеющий заинтересовать ученика. Очень интересные уроки.</p>
- <p>Я в программировании ничего не понимаю, но ребёнок очень доволен. Всего за несколько занятий, уже много чему научился. Будем продолжать обучение. И отдельное спасибо менеджеру и службе поддержки, всегда на связи. Всё просто отлично!</p>
- </div>
- <h4>Наталья Орлова</h4>
- <span>7 февраля 2022 года</span>
- </div>
- </div>
- <div class="swiper-slide">
- <div class="swiper-item">
- <img loading="lazy" src="/imgs/parent.webp" alt="">
- <div>
- <p>Добрый день. Очень рады что попали в вашу школу. Школа отличная! Высококвалифицированный преподаватель, умеющий заинтересовать ученика. Очень интересные уроки.</p>
- <p>Я в программировании ничего не понимаю, но ребёнок очень доволен. Всего за несколько занятий, уже много чему научился. Будем продолжать обучение. И отдельное спасибо менеджеру и службе поддержки, всегда на связи. Всё просто отлично!</p>
- </div>
- <h4>Наталья Орлова</h4>
- <span>7 февраля 2022 года</span>
- </div>
- </div>
- <div class="swiper-slide">
- <div class="swiper-item">
- <img loading="lazy" src="/imgs/parent.webp" alt="">
- <div>
- <p>Добрый день. Очень рады что попали в вашу школу. Школа отличная! Высококвалифицированный преподаватель, умеющий заинтересовать ученика. Очень интересные уроки.</p>
- <p>Я в программировании ничего не понимаю, но ребёнок очень доволен. Всего за несколько занятий, уже много чему научился. Будем продолжать обучение. И отдельное спасибо менеджеру и службе поддержки, всегда на связи. Всё просто отлично!</p>
- </div>
- <h4>Наталья Орлова</h4>
- <span>7 февраля 2022 года</span>
- </div>
- </div>
- <div class="swiper-slide">
- <div class="swiper-item">
- <img loading="lazy" src="/imgs/parent.webp" alt="">
- <div>
- <p>Добрый день. Очень рады что попали в вашу школу. Школа отличная! Высококвалифицированный преподаватель, умеющий заинтересовать ученика. Очень интересные уроки.</p>
- <p>Я в программировании ничего не понимаю, но ребёнок очень доволен. Всего за несколько занятий, уже много чему научился. Будем продолжать обучение. И отдельное спасибо менеджеру и службе поддержки, всегда на связи. Всё просто отлично!</p>
- </div>
- <h4>Наталья Орлова</h4>
- <span>7 февраля 2022 года</span>
- </div>
- </div>
- </div>
- <div class="swiper-pagination"></div>
- <div class="swiper-button-prev"></div>
- <div class="swiper-button-next"></div>
- </div>
-</section>
- </div>
- <div class="conteiner">
-<section class="about">
- <div class="about__content">
- <div class="about__img">
- <img loading="lazy" src="/imgs/robot3.webp" alt="">
- </div>
- <div class="about__desc">
- <h2 class="about__title">О компании</h2>
- <p>Обучаем детей новым трендовым профессиям в области программирования и вместе с родителями создаем для них лучшее будущее!</p>
- <p>Наша миссия - показать детям и родителям, что образование может быть интересным, увлекательным, при этом более качественным, чем то, что нам предлагают школы и университеты</p>
- <p>Мы покажем Вашему ребенку, что учиться - это круто! Успеваемость Вашего ребенка вырастет, а время за компьютером он начнет проводить с пользой!</p>
- </div>
- </div>
-</section>
- </div>
- <div class="conteiner">
-<section class="answers">
- <h2 class="answers__title">Ответы на вопросы</h2>
- <div class="faq">
- <div class="faq__item">
- <button class="collapsible">Как я смогу отследить прогресс ребенка?</button>
- <div class="faq__content">
- <p>Занятия практические, наглядный результат обучения - конкретные проекты, которые создают ребята. Кроме того преподаватель всегда на связи с родителем и каждые 8 уроков делает персональный отчет по каждому ученику.</p>
- </div>
- <button class="collapsible">В какое время можно заниматься?</button>
- <div class="faq__content">
- <p>Мы работаем круглосуточно 7 дней в неделю, и у нас более 100 групп, к которым можно присоединиться. Если ни одна из них не подойдёт, то мы откроем новую группу, ориентируясь на ваше расписание.<br><br>Сами занятия проходят раз в неделю в удобное для Вас время.</p>
- </div>
- <button class="collapsible">Это вебинар или онлайн-занятие?</button>
- <div class="faq__content">
- <p>На всех занятиях преподаватель работает с учениками в режиме реального времени. Это не запись видеоурока.</p>
- </div>
- <button class="collapsible">Как начать учиться?</button>
- <div class="faq__content">
- <p>Оставьте заявку на сайте.<br>Мы поможем определить подходящие условия обучения.<br>
-Проведём пробный урок, чтобы ваш ребёнок попробовал программировать и понял, подходят ли ему такие дополнительные занятия.<br>
-Определим время обучения, которое наиболее удобно для Вас.<br>
-Ваш ребёнок начнёт заниматься.</p>
- </div>
- <button class="collapsible">Другие вопросы:</button>
- <div class="faq__content">
- <p>
- <strong>Что необходимо для начала занятий?</strong><br>
-Ноутбук или компьютер. Мы предоставляем все материалы для уроков. Перед курсом ученики получают простые инструкции, как подготовиться к уроку и установить программное обеспечение. В случае трудностей наша служба технической поддержки и учителя всегда оперативно помогут.<br><br>
- <strong>Нужно ли устанавливать дополнительные программы?</strong><br>
-
-Часть заданий проходит в онлайн-программах, в которых необходимо только зарегистрироваться. Если программу потребуется установить, мы отправим вам подробную инструкцию. Наш технический специалист обязательно вам поможет, если возникнут какие-либо трудности.<br><br>
- <strong>На какой платформе проходят занятия?</strong><br>
-
-Занятия проходят на нашей платформе в браузере Google Chrome на компьютере или ноутбуке. Планшета или телефона для занятий недостаточно, так как используются профессиональные программы для работы.<br><br>
- <strong>Что если ребёнку будет недостаточно нагрузки на занятиях?</strong><br>
-
-Педагог может назначить дополнительные задания на уроке и более сложную домашнюю работу. Кроме того, мы можем перевести его в группу, в которой занимаются более сильные ребята.<br><br>
- <strong>Как преподаватель увидит, какие действия совершает ученик?</strong><br>
-
-Во время занятия дети демонстрируют свой рабочий стол, и преподаватель следит за выполнением всех заданий. Так как группы небольшие, то внимания хватит каждому ребенку.<br><br>
- <strong>Что делать, если мы уедем в отпуск или ребенок заболеет?</strong><br>
-
-Если вы пропустили урок или даже несколько занятий по любой причине, мы назначим вам отработку с преподавателем, чтобы вы смогли догнать группу. Если же догнать не получается, то мы переводим в другую группу или собираем под вас новую, и вы продолжаете занятия с того момента, где остановились, в удобное время.<br><br>
- <strong>Будут ли записи занятий?</strong><br>
-
-Мы делаем запись каждого занятия, чтобы вы могли пересмотреть урок для разбора сложной темы. Но если вы пропустили урок или даже несколько занятий по любой причине, мы назначим вам отработку с преподавателем, чтобы вы смогли догнать группу.<br><br>
- <strong>Сколько раз в неделю будут идти занятия?</strong><br>
-
-Есть 2 формата занятий: индивидуальное обучение и групповые. В групповом формате обычно занимаемся 1 или 2 раза в неделю.<br><br>
- <strong>Можно изменить график занятий после того, как ребенок начал занятие на курсе?</strong><br>
-
-Да, можно. В нашей школе более 100 групп и есть возможность заниматься индивидуально. Вы можете перейти в любой момент в другую группу по любой причине (не подходит время, не устраивает преподаватель, не хватает нагрузки или она большая и т.д.)
- </p>
- </div>
- </div>
- </div>
-</section>
- </div>
- <div class="conteiner purple-bg">
-<section class="connect">
- <div class="connect__img">
- <img loading="lazy" src="/imgs/result0.webp" alt="">
- </div>
- <div class="connect__desc">
- <div class="connect__wrap">
- <p>Связаться с нами:</p>
- <a href="tel:+88007071754">8 800 707 17 54</a>
- <p>Или напишите нам:</p>
- <div class="connect__social">
- <svg>
- <use href="/sprite.svg#whatsapp"></use>
- </svg>
- <svg>
- <use href="/sprite.svg#vk"></use>
- </svg>
- <svg>
- <use href="/sprite.svg#tg"></use>
- </svg>
- </div>
- </div>
- </div>
-</section>
- </div>
-</div>
-<footer class="footer">
-<div class="footer-container">
- <div class="footer-column">
- <h3>Курсы для взрослых</h3>
-<ul class="footer-menu">
- <li>
- <a href="/html/basicsPprogramming.html">Основы программирования (Python, JavaScript, C#)</a>
- </li>
- <li>
- <a href="#"
->Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
->
- </li>
- <li><a href="/html/dataAnalysis.html">Анализ данных и машинное обучение</a></li>
- <li><a href="/html/AutomationDevOps.html">Автоматизация и DevOps</a></li>
- <li><a href="/html/mobileApplication.html">Разработка мобильных приложений</a></li>
- <li><a href="/html/CybersecuritySoftware.html">Кибербезопасность и ПО</a></li>
- </ul>
- </div>
- <div class="footer-column">
- <h3>Курсы для детей</h3>
-<ul class="footer-menu">
- <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
- <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
- <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
- <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
- <li><a href="/html/python.html">Программирование на Python</a></li>
- </ul>
- </div>
- <div class="footer-column">
- <h3>Общие страницы</h3>
-<ul class="footer-menu">
- <li><a href="/">Главная</a></li>
- <li><a href="/html/about.html">О нас</a></li>
-
- <li><a href="/index.html#contactss">Контакты</a></li>
- </ul>
- </div>
-</div>
+<section class="contacts" id="contacts">
+  <div class="contacts__container">
+      <h2>Наши контакты</h2>
+      <p>Свяжитесь с нами, чтобы узнать больше о курсе или записаться на бесплатное занятие!</p>
+      <div class="contacts__info">
+          <div class="contacts__item">
+              <svg class="contacts__icon">
+                  <use href="sprite.svg#phone"></use>
+              </svg>
+              <div class="contacts__details">
+                  <p class="contacts__label">Телефон:</p>
+                  <p>
+                      <a href="tel:+79991234567">+7 (999) 123-45-67</a><br />
+                      <a href="tel:+79997654321">+7 (999) 765-43-21</a>
+                  </p>
+              </div>
+          </div>
+          <div class="contacts__item">
+              <svg class="contacts__icon">
+                  <use href="sprite.svg#email"></use>
+              </svg>
+              <div class="contacts__details">
+                  <p class="contacts__label">Email:</p>
+                  <p><a href="mailto:easycode@gmail.com">easycode@gmail.com</a></p>
+              </div>
+          </div>
+      </div>
+      <a href="/#SignUp" class="pulse-btn-SignUp">Записаться</a>
+  </div>
+</section><footer>
+  <div class="footer-container">
+    <a class="navbar-logo" href="/">EasyCode</a>
+    <div class="footer-column">
+      <ul class="footer-menu">
+        <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+        <li><a href="tel:+79997654321">+7 (999) 765-43-21</a></li>
+        <li><a href="mailto:easycode@gmail.com">easycode@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <ul class="footer-menu">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/html/about.html">О нас</a></li>
+        <li><a href="/index.html#contacts">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
 </footer>
- <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
- <script defer>
-const swiper = new Swiper('.swiper', {
-navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
-},
-pagination: {
-el: '.swiper-pagination',
-},
-loop: true,
-slidesPerView: '1',
-spaceBetween: 30,
-speed: 1000,
-});
-const phoneInputField1 = document.querySelector("#phone__trial");
-const phoneInput1 = window.intlTelInput(phoneInputField1, {
-preferredCountries: ["ru", "by", "kz"],
-autoInsertDialCode: true,
-nationalMode: false,
-utilsScript:
-"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-});
- </script>
- <script defer src="/script/script.js"></script>
- <script defer src="/script/trialLesson.js"></script>
+     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            loop: true,
+            slidesPerView: '1',
+            spaceBetween: 30,
+            speed: 1000,
+        });
+        const phoneInputField1 = document.querySelector("#phone__trial");
+        const phoneInput1 = window.intlTelInput(phoneInputField1, {
+            preferredCountries: ["ru", "by", "kz"],
+            autoInsertDialCode: true,
+            nationalMode: false,
+            utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+    <script src="/script/script.js"></script>
+    <script src="/script/trialLesson.js"></script>
 </body>
 </html>

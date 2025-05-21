@@ -1,134 +1,123 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Raleway:wght@300;400;500;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/style.css" />
     <link
-      media="print"
-      onload="this.media='all'"
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link
-      media="print"
-      onload="this.media='all'"
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
     />
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <title>Онлайн-школа программирования для детей и взрослых</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a class="navbar-logo" href="/">EasyCode</a>
-      <div class="menu-container">
-        <ul class="menu">
-          <li><a href="/index.html">Главная</a></li>
-          <li><a href="/html/about.html">О нас</a></li>
-          <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
-          <li><a href="/index.html#answers">FAQ</a></li>
-          <li><a href="/index.html#reviews">Отзывы</a></li>
-          <li><a href="/index.html#contact">Контакты</a></li>
-        </ul>
-        <ul class="submenu-container">
-          <li class="dropdown">
-            <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
-            <ul class="submenu">
-              <li>
-                <a href="/html/basicsPprogramming.html"
-                  >Основы программирования (Python, JavaScript, C#)</a
-                >
-              </li>
-              <li>
-                <a href="/html/webDevelopmentAdult.html"
-                  >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
-                >
-              </li>
-              <li>
-                <a href="/html/dataAnalysis.html"
-                  >Анализ данных и машинное обучение</a
-                >
-              </li>
-              <li>
-                <a href="/html/AutomationDevOps.html">Автоматизация и DevOps</a>
-              </li>
-              <li>
-                <a href="/html/mobileApplication.html"
-                  >Разработка мобильных приложений</a
-                >
-              </li>
-              <li>
-                <a href="/html/CybersecuritySoftware.html"
-                  >Кибербезопасность и ПО</a
-                >
-              </li>
-            </ul>
+<nav class="navbar">
+  <a class="navbar-logo" href="/">EasyCode</a>
+  <div class="menu-container">
+    <ul class="menu">
+      <li><a href="/index.html">Главная</a></li>
+      <li><a href="/html/about.html">О нас</a></li>
+      <li><a href="/html/ourPrepods.html">Наши преподаватели</a></li>
+      <li><a href="/index.html#answers">FAQ</a></li>
+      <li><a href="/index.html#reviews">Отзывы</a></li>
+      <li><a href="/index.html#contact">Контакты</a></li>
+    </ul>
+    <ul class="submenu-container">
+      <li class="dropdown">
+        <a href="/html/coursesadult.html">Курсы для взрослых ▾</a>
+        <ul class="submenu">
+          <li>
+            <a href="/html/basicsPprogramming.html"
+              >Основы программирования (Python, JavaScript, C#)</a
+            >
           </li>
-          <li class="dropdown">
-            <a href="/html/courseskid.html">Курсы для детей ▾</a>
-            <ul class="submenu">
-              <li>
-                <a href="/html/websiteDevelopment.html">Разработка сайтов</a>
-              </li>
-              <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
-              <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
-              <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
-              <li>
-                <a href="/html/python.html">Программирование на Python</a>
-              </li>
-            </ul>
+          <li>
+            <a href="/html/webDevelopmentAdult.html"
+              >Веб-разработка (HTML, CSS, JavaScript, React, Vue.js)</a
+            >
+          </li>
+          <li>
+            <a href="/html/dataAnalysis.html"
+              >Анализ данных и машинное обучение</a
+            >
+          </li>
+          <li>
+            <a href="/html/AutomationDevOps.html">Автоматизация и DevOps</a>
+          </li>
+          <li>
+            <a href="/html/mobileApplication.html"
+              >Разработка мобильных приложений</a
+            >
+          </li>
+          <li>
+            <a href="/html/CybersecuritySoftware.html"
+              >Кибербезопасность и ПО</a
+            >
           </li>
         </ul>
-      </div>
-      <div class="signup-button">
-        <a href="/#SignUp" class="signup-btn">Записаться</a>
-      </div>
-      <div class="burger-menu" onclick="toggleMenu()">
-        <span class="burger-icon">☰</span>
-        <span class="close-icon">✖</span>
-      </div>
-    </nav>
+      </li>
+      <li class="dropdown">
+        <a href="/html/courseskid.html">Курсы для детей ▾</a>
+        <ul class="submenu">
+          <li><a href="/html/websiteDevelopment.html">Разработка сайтов</a></li>
+          <li><a href="/html/gameJunior.html">Разработка игр Junior</a></li>
+          <li><a href="/html/gameMiddle.html">Разработка игр Middle</a></li>
+          <li><a href="/html/gameSenior.html">Разработка игр Senior</a></li>
+          <li><a href="/html/python.html">Программирование на Python</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="signup-button">
+    <a href="/#SignUp" class="signup-btn">Записаться</a>
+  </div>
+  <div class="burger-menu" onclick="toggleMenu()">
+    <span class="burger-icon">☰</span>
+    <span class="close-icon">✖</span>
+  </div>
+</nav>
 
-    <script>
-      function toggleMenu() {
-        const menu = document.querySelector(".menu-container");
-        const body = document.body;
-        const burgerIcon = document.querySelector(".burger-icon");
-        const closeIcon = document.querySelector(".close-icon");
+<script defer>
+  function toggleMenu() {
+    const menu = document.querySelector(".menu-container");
+    const body = document.body;
+    const burgerIcon = document.querySelector(".burger-icon");
+    const closeIcon = document.querySelector(".close-icon");
 
-        if (!burgerIcon || !closeIcon || !menu) return;
+    if (!burgerIcon || !closeIcon || !menu) return;
 
-        const isActive = menu.classList.toggle("active");
-        body.classList.toggle("no-scroll", isActive);
-        burgerIcon.style.display = isActive ? "none" : "inline";
-        closeIcon.style.display = isActive ? "inline" : "none";
+    const isActive = menu.classList.toggle("active");
+    body.classList.toggle("no-scroll", isActive);
+    burgerIcon.style.display = isActive ? "none" : "inline";
+    closeIcon.style.display = isActive ? "inline" : "none";
+  }
+  window.addEventListener("resize", () => {
+    const menu = document.querySelector(".menu-container");
+    const body = document.body;
+    const burgerIcon = document.querySelector(".burger-icon");
+    const closeIcon = document.querySelector(".close-icon");
+
+    if (window.innerWidth > 768) {
+      menu.classList.remove("active");
+      body.classList.remove("no-scroll");
+      if (burgerIcon && closeIcon) {
+        burgerIcon.style.display = "inline";
+        closeIcon.style.display = "none";
       }
-      window.addEventListener("resize", () => {
-        const menu = document.querySelector(".menu-container");
-        const body = document.body;
-        const burgerIcon = document.querySelector(".burger-icon");
-        const closeIcon = document.querySelector(".close-icon");
-
-        if (window.innerWidth > 768) {
-          menu.classList.remove("active");
-          body.classList.remove("no-scroll");
-          if (burgerIcon && closeIcon) {
-            burgerIcon.style.display = "inline";
-            closeIcon.style.display = "none";
-          }
-        }
-      });
-    </script>
+    }
+  });
+</script>
 
     <main>
       <div class="modal-overlay modal_closed" id="modal-overlay"></div>
@@ -158,7 +147,7 @@
 
       <div class="modal-trial-lesson modal_closed" id="modal-trial-lesson">
         <h2 class="modal-trial-lesson__title">
-          Запишитесь на<span class="blue">бесплатный</span> урок
+          Запишитесь на <span class="blue">бесплатный</span> урок
         </h2>
         <p class="modal-trial-lesson__txt_1">
           Оставьте заявку и наши менеджеры согласуют с Вами удобное время
@@ -168,7 +157,7 @@
           <input
             class="modal-trial-lesson__input"
             type="text"
-            id="name1"
+            id="name"
             placeholder="Как вас зовут?"
           />
           <input
@@ -195,7 +184,7 @@
 
         <p class="modal-trial-lesson__txt_2">
           Нажимая на кнопку, вы даете согласие на обработку персональных данных
-          и соглашаетесь c<a href="#">политикой конфиденциальности</a>
+          и соглашаетесь c <a href="#">политикой конфиденциальности</a>
         </p>
       </div>
 
@@ -211,35 +200,39 @@
           <div class="take-test__desc">
             <div class="take-test__quest_1">
               <h2>Сколько лет Вашему ребенку?</h2>
-              <input class="take-test__age" type="number" name="age" id="age" />
+              <input class="take-test__age" type="number" name="age" id="" />
             </div>
             <div class="take-test__quest_2">
               <h2>
-                Сколько времени вы проводите в гаджетах (телефон или компьютер)?
+                Сколько времени вы проводите в гаджетах (телефон или
+                компьютер) ?
               </h2>
               <label
                 ><input
                   class="modal-take__check"
                   type="radio"
                   name="hours"
-                  id="hours1"
-                />Менее 1 часа в день</label
+                  id=""
+                />
+                Менее 1 часа в день</label
               >
               <label
                 ><input
                   class="modal-take__check"
                   type="radio"
                   name="hours"
-                  id="hours2"
-                />От 1 до 4 часов в день</label
+                  id=""
+                />
+                От 1 до 4 часов в день</label
               >
               <label
                 ><input
                   class="modal-take__check"
                   type="radio"
                   name="hours"
-                  id="hours3"
-                />Более 4 часов в день</label
+                  id=""
+                />
+                Более 4 часов в день</label
               >
             </div>
             <div class="take-test__quest_3">
@@ -249,16 +242,18 @@
                   class="modal-take__check"
                   type="radio"
                   name="expiriens"
-                  id="yes"
-                />Да</label
+                  id=""
+                />
+                Да</label
               >
               <label
                 ><input
                   class="modal-take__check"
                   type="radio"
                   name="expiriens"
-                  id="no"
-                />Нет</label
+                  id=""
+                />
+                Нет</label
               >
             </div>
           </div>
@@ -269,8 +264,8 @@
         </div>
         <div class="take-test__imgs">
           <span>ПОЛУЧИТЕ БОНУСЫ ПОСЛЕ РЕГИСТРАЦИИ</span>
-          <img loading="lazy" src="/imgs/two1.webp" alt="" />
-          <img loading="lazy" src="/imgs/two2.webp" alt="" />
+          <img src="/imgs/two1.webp" alt="" />
+          <img src="/imgs/two2.webp" alt="" />
         </div>
       </div>
       <div class="modal__take-test_2 modal_closed" id="modal__take-test_2">
@@ -282,7 +277,7 @@
           <input
             class="modal-trial-lesson__input"
             type="text"
-            id="name2"
+            id="name"
             placeholder="Как вас зовут?"
           />
           <input
@@ -301,55 +296,25 @@
       </div>
 
       <div class="content first-section">
-        <svg class="bg_left"><use href="sprite.svg#bg_left"></use></svg>
-        <svg class="bg_right"><use href="sprite.svg#bg_right"></use></svg>
+        <svg class="bg_left">
+          <use href="sprite.svg#bg_left"></use>
+        </svg>
+        <svg class="bg_right">
+          <use href="sprite.svg#bg_right"></use>
+        </svg>
         <section class="one">
-          <img loading="lazy" class="cube" src="/imgs/cube.webp" alt="" />
-          <img loading="lazy" class="ball" src="/imgs/ball.webp" alt="" />
+          <img class="cube" src="/imgs/cube.webp" alt="" />
+          <img class="ball" src="/imgs/ball.webp" alt="" />
           <div class="one__desk">
             <div class="one__container_1">
               <p class="one__btn-lip_1">Онлайн-школа</p>
               <h1 class="one__title">ПРОГРАММИРОВАНИЕ ДЛЯ ДЕТЕЙ И ВЗРОСЛЫХ</h1>
               <p class="one__txt">
-                С нуля обучим Вас навыкам разработчика и покажем,<strong
-                  class="blue"
-                  >что учиться – это интересно!</strong
-                >
+                С нуля обучим Вас навыкам разработчика и покажем,
+                <strong class="blue">что учиться – это интересно!</strong>
               </p>
             </div>
-            <div class="one__blocks">
-              <div class="one__blocks-wrap">
-                <div class="one__block">
-                  <svg><use href="sprite.svg#one__1"></use></svg>
-                  <p>
-                    <strong>Польза для всех возрастов:</strong> Дети и взрослые
-                    научатся проводить время за компьютером с максимальной
-                    пользой, осваивая новые навыки.
-                  </p>
-                </div>
-                <div class="one__block">
-                  <svg><use href="sprite.svg#one__2"></use></svg>
-                  <p>
-                    <strong>Результаты обучения:</strong> Успеваемость наших
-                    студентов (и детей, и взрослых) повышается благодаря
-                    практическому подходу и индивидуальному вниманию.
-                  </p>
-                </div>
-                <div class="one__block">
-                  <svg><use href="sprite.svg#one__3"></use></svg>
-                  <p>
-                    <strong>Освоение востребованных навыков:</strong> Участники
-                    курсов получат знания, которые помогут им в будущем освоить
-                    одну из самых<strong
-                      >высокооплачиваемых и перспективных профессий</strong
-                    >.
-                  </p>
-                </div>
-              </div>
-              <div class="one__img-dop">
-                <img loading="lazy" src="/imgs/one__dop.webp" alt="" />
-              </div>
-            </div>
+            <div class="one__blocks"> <div class="one__blocks-wrap"> <div class="one__block"> <svg> <use href="sprite.svg#one__1"></use> </svg> <p> <strong>Польза для всех возрастов:</strong> Дети и взрослые научатся проводить время за компьютером с максимальной пользой, осваивая новые навыки. </p> </div> <div class="one__block"> <svg> <use href="sprite.svg#one__2"></use> </svg> <p> <strong>Результаты обучения:</strong> Успеваемость наших студентов (и детей, и взрослых) повышается благодаря практическому подходу и индивидуальному вниманию. </p> </div> <div class="one__block"> <svg> <use href="sprite.svg#one__3"></use> </svg> <p> <strong>Освоение востребованных навыков:</strong> Участники курсов получат знания, которые помогут им в будущем освоить одну из самых <strong>высокооплачиваемых и перспективных профессий</strong>. </p> </div> </div> <div class="one__img-dop"> <img src="/imgs/one__dop.webp" alt="" /> </div> </div>
             <div class="one__container_2">
               <div class="one__btnDesk">
                 <a class="one__btn trial-lesson">Записаться на пробный урок</a>
@@ -365,19 +330,22 @@
                 </div>
               </div>
               <p class="one__text">
-                Попробуйте первое занятие<strong class="blue">бесплатно</strong>
+                Попробуйте первое занятие
+                <strong class="blue">бесплатно</strong>
               </p>
             </div>
           </div>
           <div class="one__img">
             <p class="one__btn-lip_2">Онлайн-школа</p>
-            <img loading="lazy" src="/imgs/one__img.webp" alt="" />
+            <img src="/imgs/one__img.webp" alt="" />
             <p class="one__img-txt">
               Лицензия на осуществления образовательной деятельности
               №Л035-01272-16/00682922
             </p>
             <div>
-              <svg><use href="sprite.svg#project"></use></svg>
+              <svg>
+                <use href="sprite.svg#project"></use>
+              </svg>
               <p>
                 <strong class="blue">СОЗДАДИМ ПРОЕКТ НА ПЕРВОМ ЗАНЯТИИ!</strong>
               </p>
@@ -386,257 +354,32 @@
         </section>
         <section class="two">
           <div class="two__img-main">
-            <img loading="lazy" src="/imgs/two__img.webp" alt="" />
+            <img src="/imgs/two__img.webp" alt="" />
           </div>
           <div class="two__desc">
             <h2 class="two__title">
-              Запишитесь на<strong class="blue">бесплатный мастер-класс</strong>
-              попрограммированию<br /><strong class="blue">до 16 ноября</strong>
+              Запишитесь на
+              <strong class="blue">бесплатный мастер-класс</strong> по
+              программированию <br />
+              <strong class="blue">до 16 ноября</strong>
             </h2>
             <p class="two__txt two__txt_1">
-              Ответьте на 3 простых вопросов и закрепите за собой место
-              набесплатном мастер-классе
+              Ответьте на 3 простых вопросов и закрепите за собой место на
+              бесплатном мастер-классе
             </p>
             <a href="html/result.html" class="two__btn take-test"
               >Ответить на вопросы</a
             >
             <p class="two__txt two__txt_2">ПОЛУЧИТЕ БОНУСЫ ПОСЛЕ РЕГИСТРАЦИИ</p>
             <div class="two__imgs">
-              <img loading="lazy" src="/imgs/two1.webp" alt="" />
-              <img loading="lazy" src="/imgs/two2.webp" alt="" />
+              <img src="/imgs/two1.webp" alt="" />
+              <img src="/imgs/two2.webp" alt="" />
             </div>
           </div>
         </section>
-        <section class="why-courses">
-          <div class="why-courses__grid">
-            <h2 class="grid__title">
-              Почему стоит начать изучать IT уже сейчас?
-            </h2>
-            <div class="grid__blocks">
-              <div class="grid__block">
-                <div class="grid__block-container">
-                  <div>
-                    <svg><use href="sprite.svg#three_1"></use></svg>
-                  </div>
-                  <h4>Изучение основ английского языка</h4>
-                </div>
-                <p>
-                  Обучение проходит на русском языке, но мы также помогаем
-                  освоить базовый английский, необходимый для работы в IT.
-                </p>
-              </div>
-              <div class="grid__block">
-                <div class="grid__block-container">
-                  <div>
-                    <svg><use href="sprite.svg#three_2"></use></svg>
-                  </div>
-                  <h4>Освоение ключевых навыков разработчика</h4>
-                </div>
-                <p>
-                  На курсах вы научитесь создавать игры, веб-сайты и приложения,
-                  а также освоите популярные языки программирования, такие как
-                  Python, JavaScript, C# и другие.
-                </p>
-              </div>
-              <div class="grid__block">
-                <div class="grid__block-container">
-                  <div>
-                    <svg><use href="sprite.svg#three_3"></use></svg>
-                  </div>
-                  <h4>Комплексное развитие навыков</h4>
-                </div>
-                <p>
-                  Участники курсов развивают логическое мышление, креативность,
-                  улучшают внимание и математические навыки, что полезно как для
-                  детей, так и для взрослых.
-                </p>
-              </div>
-              <div class="grid__block">
-                <div class="grid__block-container">
-                  <div>
-                    <svg><use href="sprite.svg#three_4"></use></svg>
-                  </div>
-                  <h4>Навыки работы в команде</h4>
-                </div>
-                <p>
-                  Занятия проходят в небольших группах, где участники учатся
-                  взаимодействовать, обмениваться идеями и работать над
-                  совместными проектами.
-                </p>
-              </div>
-              <div class="grid__block">
-                <div class="grid__block-container">
-                  <div>
-                    <svg><use href="sprite.svg#three_5"></use></svg>
-                  </div>
-                  <h4>Получение сертификата</h4>
-                </div>
-                <p>
-                  После окончания курса каждый участник получит сертификат,
-                  подтверждающий освоенные навыки и знания.
-                </p>
-              </div>
-              <div class="grid__block">
-                <div class="grid__block-container">
-                  <div>
-                    <svg><use href="sprite.svg#three_6"></use></svg>
-                  </div>
-                  <h4>Опытные преподаватели-практики</h4>
-                </div>
-                <p>
-                  Все наши преподаватели — профессионалы из ведущих IT-компаний,
-                  которые знают, какие навыки действительно востребованы.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="why-courses__blue">
-            <div class="why-courses__grid-content">
-              <h2 class="blue__title">
-                Успейте записаться на бесплатное пробное занятие с
-                IT-преподавателем
-              </h2>
-              <p class="blue__txt">
-                Мы покажем, как проходит обучение, и поможем определиться с
-                направлением.
-              </p>
-              <div class="blue__grid">
-                <div class="blue__grid-elem">
-                  <div class="blue__grid-block_1">
-                    <span>1</span>
-                    <h4>Практическое занятие с опытным преподавателем</h4>
-                  </div>
-                  <p>
-                    После определения ваших интересов и целей мы вместе создадим
-                    первый проект в выбранной области IT.
-                  </p>
-                  <div class="blue__grid-block_2">
-                    <p>Стоимость часа занятий:</p>
-                    <span class="line-through grey">50 руб</span>
-                    <span>0 руб</span>
-                  </div>
-                </div>
-                <div class="blue__grid-elem">
-                  <div class="blue__grid-block_1">
-                    <span>2</span>
-                    <h4>Определение ваших сильных сторон</h4>
-                  </div>
-                  <ul>
-                    <li>Поймете, подходит ли вам программирование</li>
-                    <li>Познакомитесь с преподавателем</li>
-                    <li>Получите индивидуальную консультацию</li>
-                  </ul>
-                  <div class="blue__grid-block_2">
-                    <p>Стоимость консультации:</p>
-                    <span class="line-through grey">20 руб</span>
-                    <span>0 руб</span>
-                  </div>
-                </div>
-                <div class="blue__grid-elem">
-                  <div class="blue__grid-block_1">
-                    <span>3</span>
-                    <h4>Создание первого проекта</h4>
-                  </div>
-                  <img loading="lazy" src="/imgs/three1.jpg" alt="" />
-                  <div class="blue__grid-block_2">
-                    <p>Цена материалов:</p>
-                    <span class="line-through grey">500 руб</span>
-                    <span>0 руб</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="why-courses__trial-lesson">
-              <div class="trial-lesson__img">
-                <img loading="lazy" src="/imgs/three2.png" alt="" />
-              </div>
-              <div class="trial-lesson__desk">
-                <p class="trial-lesson__title">
-                  Запишитесь на пробное занятие* и получите это:
-                </p>
-                <p class="trial-lesson__price">
-                  Общая цена:<span class="trial-lesson__price_big"
-                    >170 руб.</span
-                  >
-                </p>
-                <p class="trial-lesson__free">БЕСПЛАТНО</p>
-              </div>
-              <div class="trial-lesson__btn">
-                <a class="trial-lesson" href="">Записаться</a>
-                <p class="trial-lesson__txt">*количество мест ограничено</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section class="why-courses"> <div class="why-courses__grid"> <h2 class="grid__title"> Почему стоит начать изучать IT уже сейчас? </h2> <div class="grid__blocks"> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="sprite.svg#three_1"></use> </svg> </div> <h4>Изучение основ английского языка</h4> </div> <p> Обучение проходит на русском языке, но мы также помогаем освоить базовый английский, необходимый для работы в IT. </p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="sprite.svg#three_2"></use> </svg> </div> <h4>Освоение ключевых навыков разработчика</h4> </div> <p> На курсах вы научитесь создавать игры, веб-сайты и приложения, а также освоите популярные языки программирования, такие как Python, JavaScript, C# и другие. </p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="sprite.svg#three_3"></use> </svg> </div> <h4>Комплексное развитие навыков</h4> </div> <p> Участники курсов развивают логическое мышление, креативность, улучшают внимание и математические навыки, что полезно как для детей, так и для взрослых. </p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="sprite.svg#three_4"></use> </svg> </div> <h4>Навыки работы в команде</h4> </div> <p> Занятия проходят в небольших группах, где участники учатся взаимодействовать, обмениваться идеями и работать над совместными проектами. </p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="sprite.svg#three_5"></use> </svg> </div> <h4>Получение сертификата</h4> </div> <p> После окончания курса каждый участник получит сертификат, подтверждающий освоенные навыки и знания. </p> </div> <div class="grid__block"> <div class="grid__block-container"> <div> <svg> <use href="sprite.svg#three_6"></use> </svg> </div> <h4>Опытные преподаватели-практики</h4> </div> <p> Все наши преподаватели — профессионалы из ведущих IT-компаний, которые знают, какие навыки действительно востребованы. </p> </div> </div> </div> <div class="why-courses__blue"> <div class="why-courses__grid-content"> <h2 class="blue__title"> Успейте записаться на бесплатное пробное занятие с IT-преподавателем </h2> <p class="blue__txt"> Мы покажем, как проходит обучение, и поможем определиться с направлением. </p> <div class="blue__grid"> <div class="blue__grid-elem"> <div class="blue__grid-block_1"> <span>1</span> <h4>Практическое занятие с опытным преподавателем</h4> </div> <p> После определения ваших интересов и целей мы вместе создадим первый проект в выбранной области IT. </p> <div class="blue__grid-block_2"> <p>Стоимость часа занятий:</p> <span class="line-through grey">50 руб</span> <span>0 руб</span> </div> </div> <div class="blue__grid-elem"> <div class="blue__grid-block_1"> <span>2</span> <h4>Определение ваших сильных сторон</h4> </div> <ul> <li>Поймете, подходит ли вам программирование</li> <li>Познакомитесь с преподавателем</li> <li>Получите индивидуальную консультацию</li> </ul> <div class="blue__grid-block_2"> <p>Стоимость консультации:</p> <span class="line-through grey">20 руб</span> <span>0 руб</span> </div> </div> <div class="blue__grid-elem"> <div class="blue__grid-block_1"> <span>3</span> <h4>Создание первого проекта</h4> </div> <img src="/imgs/three1.jpg" alt="" /> <div class="blue__grid-block_2"> <p>Цена материалов:</p> <span class="line-through grey">500 руб</span> <span>0 руб</span> </div> </div> </div> </div> <div class="why-courses__trial-lesson"> <div class="trial-lesson__img"> <img src="/imgs/three2.png" alt="" /> </div> <div class="trial-lesson__desk"> <p class="trial-lesson__title"> Запишитесь на пробное занятие* и получите это: </p> <p class="trial-lesson__price"> Общая цена: <span class="trial-lesson__price_big">170 руб.</span> </p> <p class="trial-lesson__free">БЕСПЛАТНО</p> </div> <div class="trial-lesson__btn"> <a class="trial-lesson" href="">Записаться</a> <p class="trial-lesson__txt">*количество мест ограничено</p> </div> </div> </div> </section>
 
-        <section class="lessons-how">
-          <h2>Как проходят занятия?</h2>
-          <div class="lessons-how__grid">
-            <div class="lessons-how__grid-elem">
-              <svg><use href="sprite.svg#fore_1"></use></svg>
-              <div class="lessons-how__grid-elem_txt">
-                <h4>Мини-группы до 10 человек</h4>
-                <p>
-                  Занятия в небольших группах позволяют эффективно
-                  взаимодействовать с преподавателем и другими участниками,
-                  обмениваться опытом и работать над совместными проектами.
-                </p>
-              </div>
-            </div>
-            <div class="lessons-how__grid-elem">
-              <svg><use href="sprite.svg#fore_2"></use></svg>
-              <div class="lessons-how__grid-elem_txt">
-                <h4>Длительность уроков 90 минут</h4>
-                <p>
-                  Оптимальное время для усвоения материала. Включает перерывы
-                  для отдыха и обсуждения вопросов.
-                </p>
-              </div>
-            </div>
-            <div class="lessons-how__grid-elem">
-              <svg><use href="sprite.svg#fore_3"></use></svg>
-              <div class="lessons-how__grid-elem_txt">
-                <h4>Гибкий график занятий</h4>
-                <p>
-                  Мы подбираем удобное время для занятий, чтобы обучение легко
-                  вписывалось в ваш распорядок дня.
-                </p>
-              </div>
-            </div>
-            <div class="lessons-how__grid-elem">
-              <svg><use href="sprite.svg#fore_4"></use></svg>
-              <div class="lessons-how__grid-elem_txt">
-                <h4>Увлекательный формат обучения</h4>
-                <p>
-                  Каждое занятие наполнено практическими заданиями и реальными
-                  кейсами, чтобы участники могли сразу применять полученные
-                  знания.
-                </p>
-              </div>
-            </div>
-            <div class="lessons-how__grid-elem">
-              <svg><use href="sprite.svg#fore_5"></use></svg>
-              <div class="lessons-how__grid-elem_txt">
-                <h4>Индивидуальные консультации</h4>
-                <p>
-                  Возможность заниматься один на один с преподавателем для
-                  углубленного изучения тем или решения сложных задач.
-                </p>
-              </div>
-            </div>
-            <div class="lessons-how__grid-elem">
-              <svg><use href="sprite.svg#fore_6"></use></svg>
-              <div class="lessons-how__grid-elem_txt">
-                <h4>Равные возможности для всех</h4>
-                <p>
-                  Мы уделяем внимание каждому участнику. Если материал вызывает
-                  сложности, преподаватель поможет разобраться и закрепить
-                  знания.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section class="lessons-how"> <h2>Как проходят занятия?</h2> <div class="lessons-how__grid"> <div class="lessons-how__grid-elem"> <svg> <use href="sprite.svg#fore_1"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Мини-группы до 10 человек</h4> <p> Занятия в небольших группах позволяют эффективно взаимодействовать с преподавателем и другими участниками, обмениваться опытом и работать над совместными проектами. </p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="sprite.svg#fore_2"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Длительность уроков 90 минут</h4> <p> Оптимальное время для усвоения материала. Включает перерывы для отдыха и обсуждения вопросов. </p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="sprite.svg#fore_3"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Гибкий график занятий</h4> <p> Мы подбираем удобное время для занятий, чтобы обучение легко вписывалось в ваш распорядок дня. </p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="sprite.svg#fore_4"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Увлекательный формат обучения</h4> <p> Каждое занятие наполнено практическими заданиями и реальными кейсами, чтобы участники могли сразу применять полученные знания. </p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="sprite.svg#fore_5"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Индивидуальные консультации</h4> <p> Возможность заниматься один на один с преподавателем для углубленного изучения тем или решения сложных задач. </p> </div> </div> <div class="lessons-how__grid-elem"> <svg> <use href="sprite.svg#fore_6"></use> </svg> <div class="lessons-how__grid-elem_txt"> <h4>Равные возможности для всех</h4> <p> Мы уделяем внимание каждому участнику. Если материал вызывает сложности, преподаватель поможет разобраться и закрепить знания. </p> </div> </div> </div> </section>
         <section class="courses">
           <svg class="courses__bg_left">
             <use href="sprite.svg#bg_left"></use>
@@ -648,7 +391,9 @@
           <div class="courses__blocks">
             <div class="courses__block">
               <div class="courses__block-img">
-                <svg><use href="sprite.svg#five_1"></use></svg>
+                <svg>
+                  <use href="sprite.svg#five_1"></use>
+                </svg>
               </div>
               <div class="courses__block-desc">
                 <h4>Разработка сайтов</h4>
@@ -673,7 +418,9 @@
             </div>
             <div class="courses__block">
               <div class="courses__block-img">
-                <svg><use href="sprite.svg#five_2"></use></svg>
+                <svg>
+                  <use href="sprite.svg#five_2"></use>
+                </svg>
               </div>
               <div class="courses__block-desc">
                 <h4>Разработка игр Junior</h4>
@@ -694,90 +441,58 @@
               </div>
             </div>
             <a href="/html/courseskid.html" class="courses__btn-all"
-              >Посмотреть все детские курсы</a
-            >
+            >Посмотреть все детские курсы</a
+          >
           </div>
-          <h2 style="margin-top: 40px" class="courses__title">
-            Какие есть курсы для взрослых?
-          </h2>
-          <div class="courses__blocks">
-            <div class="courses__block">
-              <div class="courses__block-img">
-                <svg><use href="/sprite.svg#five_2"></use></svg>
-              </div>
-              <div class="courses__block-desc">
-                <h4>Веб-разработка</h4>
-                <p>
-                  Курс по Веб-разработке — это возможность научиться создавать
-                  современные сайты и веб-приложения. Вы освоите ключевые
-                  технологии: HTML для структуры страниц, CSS для стилей и
-                  JavaScript для интерактивности. Также познакомитесь с
-                  популярными фреймворками, такими как React или Vue.js, и
-                  научитесь работать с серверной частью (Node.js, базы данных).
-                  Курс включает много практики: от верстки макетов до разработки
-                  полноценных веб-приложений. Подходит для начинающих и тех, кто
-                  хочет углубить свои навыки. Идеальный старт для карьеры в
-                  веб-разработке.
-                </p>
-                <a
-                  class="courses__block-link"
-                  href="/html/webDevelopmentAdult.html"
-                  >ПОДРОБНЕЕ О КУРСЕ</a
-                >
-                <a href="#" class="courses__btn trial-lesson"
-                  >Записаться на пробный урок</a
-                >
-              </div>
-            </div>
-            <div class="courses__block">
-              <div class="courses__block-img">
-                <svg><use href="/sprite.svg#five_3"></use></svg>
-              </div>
-              <div class="courses__block-desc">
-                <h4>Анализ данных и машинное обучение</h4>
-                <p>
-                  Курс по Анализу данных и машинному обучению — это погружение в
-                  мир работы с большими данными и создание интеллектуальных
-                  систем. Вы научитесь обрабатывать, анализировать и
-                  визуализировать данные с помощью Python и библиотек, таких как
-                  Pandas, NumPy и Matplotlib. Освоите основы машинного обучения:
-                  от линейной регрессии до нейронных сетей, используя
-                  Scikit-learn и TensorFlow. Курс включает решение реальных
-                  задач: прогнозирование, классификация, кластеризация данных.
-                  Подходит для тех, кто хочет начать карьеру в Data Science или
-                  углубить свои знания в области анализа данных и ИИ. Практика и
-                  проекты помогут закрепить навыки и подготовиться к работе в
-                  этой перспективной сфере.
-                </p>
-                <a class="courses__block-link" href="/html/dataAnalysis.html"
-                  >ПОДРОБНЕЕ О КУРСЕ</a
-                >
-                <a href="#" class="courses__btn trial-lesson"
-                  >Записаться на пробный урок</a
-                >
-              </div>
-            </div>
-            <a href="/html/coursesadult.html" class="courses__btn-all"
-              >Посмотреть все курсы для взрослых</a
-            >
+          <h2 style="margin-top: 40px;" class="courses__title">Какие есть курсы для взрослых?</h2>
+            <div class="courses__blocks">
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_2"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Веб-разработка</h4>
+                        <p>Курс по Веб-разработке — это возможность научиться создавать современные сайты и веб-приложения. Вы освоите ключевые технологии: HTML для структуры страниц, CSS для стилей и JavaScript для интерактивности. Также познакомитесь с популярными фреймворками, такими как React или Vue.js, и научитесь работать с серверной частью (Node.js, базы данных). Курс включает много практики: от верстки макетов до разработки полноценных веб-приложений. Подходит для начинающих и тех, кто хочет углубить свои навыки. Идеальный старт для карьеры в веб-разработке.</p>
+                        <a class="courses__block-link" href="/html/webDevelopmentAdult.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <div class="courses__block">
+                    <div class="courses__block-img">
+                        <svg>
+                            <use href="/sprite.svg#five_3"></use>
+                        </svg>
+                    </div>
+                    <div class="courses__block-desc">
+                        <h4>Анализ данных и машинное обучение</h4>
+                        <p>Курс по Анализу данных и машинному обучению — это погружение в мир работы с большими данными и создание интеллектуальных систем. Вы научитесь обрабатывать, анализировать и визуализировать данные с помощью Python и библиотек, таких как Pandas, NumPy и Matplotlib. Освоите основы машинного обучения: от линейной регрессии до нейронных сетей, используя Scikit-learn и TensorFlow. Курс включает решение реальных задач: прогнозирование, классификация, кластеризация данных. Подходит для тех, кто хочет начать карьеру в Data Science или углубить свои знания в области анализа данных и ИИ. Практика и проекты помогут закрепить навыки и подготовиться к работе в этой перспективной сфере.</p>
+                        <a class="courses__block-link" href="/html/dataAnalysis.html">ПОДРОБНЕЕ О КУРСЕ</a>
+                        <a href="#" class="courses__btn trial-lesson">Записаться на пробный урок</a>
+                    </div>
+                </div>
+                <a href="/html/coursesadult.html" class="courses__btn-all"
+            >Посмотреть все курсы для взрослых</a
+          >
           </div>
         </section>
       </div>
       <section class="six">
         <div class="six__img">
-          <img loading="lazy" src="/imgs/six.webp" alt="" />
+          <img src="/imgs/six.webp" alt="" />
         </div>
         <div class="six__desk">
           <div class="six__titleTxt">
             <h2 class="six__title">Попробуйте первый урок БЕСПЛАТНО</h2>
             <p class="six__txt">
-              За 60 минут вы сделаете свою первую простую игру, мини-сайт или
-              даже чат-бота и пройдет профориентацию
+              За 60 минут вы сделаете свою первую простую игру, мини-сайт
+              или даже чат-бота и пройдет профориентацию
             </p>
           </div>
           <div class="six__imgBlocks">
             <div class="six__img_dop">
-              <img loading="lazy" src="/imgs/six.webp" alt="" />
+              <img src="/imgs/six.webp" alt="" />
             </div>
             <div class="six__blocks">
               <div class="six__block">
@@ -812,13 +527,13 @@
             <div class="prepod__desk">
               <div>
                 <p class="prepod__txt">
-                  Вам будет выделен<strong class="blue">1 из 35</strong
+                  Вам будет выделен <strong class="blue">1 из 35</strong
                   ><br />сильнейших преподавателей школы EasyCode, который
                   проведет первое пробное занятие.
                 </p>
               </div>
               <div class="prepod__img_dop">
-                <img loading="lazy" src="/imgs/prepod.webp" alt="" />
+                <img src="/imgs/prepod.webp" alt="" />
               </div>
               <div>
                 <p class="prepod__name">Александр</p>
@@ -827,17 +542,15 @@
                   обучение. Говорит с ребятами на одном языке.
                 </p>
                 <p class="prepod__statistic">
-                  Прошло обучение: более<strong class="blue"
-                    >250 учеников</strong
-                  >
+                  Прошло обучение: более <strong class="blue">250 учеников</strong>
                 </p>
                 <p class="prepod__statistic">
-                  Стаж работы:<strong class="blue">6 лет</strong>
+                  Стаж работы: <strong class="blue">6 лет</strong>
                 </p>
               </div>
             </div>
             <div class="prepod__img">
-              <img loading="lazy" src="/imgs/prepod.webp" alt="" />
+              <img src="/imgs/prepod.webp" alt="" />
             </div>
           </div>
         </section>
@@ -848,7 +561,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="slider__item">
-                    <img loading="lazy" src="/imgs/slider1.webp" alt="" />
+                    <img src="/imgs/slider.webp" alt="" />
                     <h4>Сергей Уколов</h4>
                     <p><strong>1 год</strong> опыта</p>
                     <p><strong>32</strong>учеников</p>
@@ -862,10 +575,10 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="slider__item">
-                    <img loading="lazy" src="/imgs/slider2.jpg" alt="" />
-                    <h4>Владимир Кузнецов</h4>
-                    <p><strong>5 лет</strong> опыта</p>
-                    <p><strong>60</strong> учеников</p>
+                    <img src="/imgs/slider.webp" alt="" />
+                    <h4>Сергей Уколов</h4>
+                    <p><strong>1 год</strong> опыта</p>
+                    <p><strong>32</strong>учеников</p>
                     <a
                       class="blue"
                       href="html/ourPrepods.html"
@@ -876,10 +589,10 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="slider__item">
-                    <img loading="lazy" src="/imgs/slider3.jpg" alt="" />
-                    <h4>Дмитрий Смирнов</h4>
-                    <p><strong>2 года</strong> опыта</p>
-                    <p><strong>28</strong> учеников</p>
+                    <img src="/imgs/slider.webp" alt="" />
+                    <h4>Сергей Уколов</h4>
+                    <p><strong>1 год</strong> опыта</p>
+                    <p><strong>32</strong>учеников</p>
                     <a
                       class="blue"
                       href="html/ourPrepods.html"
@@ -890,10 +603,10 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="slider__item">
-                    <img loading="lazy" src="/imgs/slider4.jpg" alt="" />
-                    <h4>Николай Павлов</h4>
-                    <p><strong>4 года</strong> опыта</p>
-                    <p><strong>50</strong> учеников</p>
+                    <img src="/imgs/slider.webp" alt="" />
+                    <h4>Сергей Уколов</h4>
+                    <p><strong>1 год</strong> опыта</p>
+                    <p><strong>32</strong>учеников</p>
                     <a
                       class="blue"
                       href="html/ourPrepods.html"
@@ -904,7 +617,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="slider__item">
-                    <img loading="lazy" src="/imgs/slider1.webp" alt="" />
+                    <img src="/imgs/slider.webp" alt="" />
                     <h4>Сергей Уколов</h4>
                     <p><strong>1 год</strong> опыта</p>
                     <p><strong>32</strong>учеников</p>
@@ -928,19 +641,19 @@
       </div>
       <section class="six">
         <div class="six__img">
-          <img loading="lazy" src="/imgs/six.webp" alt="" />
+          <img src="/imgs/six.webp" alt="" />
         </div>
         <div class="six__desk">
           <div class="six__titleTxt">
             <h2 class="six__title">Попробуйте первый урок БЕСПЛАТНО</h2>
             <p class="six__txt">
-              За 60 минут вы сделаете свою первую простую игру, мини-сайт или
-              даже чат-бота и пройдет профориентацию
+              За 60 минут вы сделаете свою первую простую игру, мини-сайт
+              или даже чат-бота и пройдет профориентацию
             </p>
           </div>
           <div class="six__imgBlocks">
             <div class="six__img_dop">
-              <img loading="lazy" src="/imgs/six.webp" alt="" />
+              <img src="/imgs/six.webp" alt="" />
             </div>
             <div class="six__blocks">
               <div class="six__block">
@@ -974,7 +687,7 @@
           <div class="projects__wrap">
             <div class="projects__blocks">
               <div class="projects__video">
-                <video preload="none" controls="controls" class="video">
+                <video controls="controls" class="video">
                   <source
                     src="video/данил.ogv"
                     type='video/ogg; codecs="theora, vorbis"'
@@ -1002,7 +715,7 @@
             </div>
             <div class="projects__blocks">
               <div class="projects__video">
-                <video preload="none" controls="controls" class="video">
+                <video controls="controls" class="video">
                   <source
                     src="video/данил.ogv"
                     type='video/ogg; codecs="theora, vorbis"'
@@ -1018,14 +731,13 @@
                 </video>
               </div>
               <div class="projects__desk">
-                <p class="projects__btn_lip">Веб-разработка</p>
-                <h4 class="projects__name">Максим, 23 года</h4>
-                <p class="projects__name-txt">Прошел 28 уроков</p>
+                <p class="projects__btn_lip">Разработка сайтов</p>
+                <h4 class="projects__name">Данил, 14 лет</h4>
+                <p class="projects__name-txt">Прошел 23 урока</p>
                 <p class="projects__txt">
-                  Разработал интернет-магазин для продажи настольных игр. Проект
-                  создан с нуля, включая дизайн и адаптивную верстку. Максим
-                  самостоятельно реализовал идею, уделяя время проекту вне
-                  учебного курса.
+                  Сайт для компьютерного клуба. Макет был создан для изучения
+                  адаптивной верстки. Идея полностью Данилы. Делал он все
+                  самостоятельно во вне учебное время.
                 </p>
               </div>
             </div>
@@ -1035,304 +747,87 @@
           >
         </section>
       </div>
-      <section class="penchant">
-        <h3 class="penchant__title_dop">
-          Узнайте, есть ли у вас или вашего ребенка склонность к
-          программированию
-        </h3>
-        <div class="penchant__wrap">
-          <div class="penchant__quote">
-            <span
-              >"Стоит ли начинать изучать программирование? Как понять, есть ли
-              способности? Ведь не каждый человек предрасположен к техническим
-              специальностям и точным наукам."</span
-            >
-          </div>
-          <div class="penchant__desk">
-            <h3>
-              Узнайте, есть ли у вас или вашего ребенка склонность к
-              программированию
-            </h3>
-            <p>Пройдите короткий тест, ответив на 12 вопросов</p>
-            <a href="#" class="penchant__btn take-test">Пройти тест</a>
-          </div>
-        </div>
-      </section>
-      <div class="content">
-        <section class="answers" id="answers">
-          <h2 class="answers__title">Ответы на вопросы</h2>
-          <div class="faq">
-            <div class="faq__item">
-              <button class="collapsible">
-                Как я смогу отследить прогресс?
-              </button>
-              <div class="faq__content">
-                <p>
-                  Занятия практические, и результат обучения — это конкретные
-                  проекты, которые создают участники. Преподаватель всегда на
-                  связи и каждые 8 уроков предоставляет персональный отчет по
-                  каждому ученику.
-                </p>
-              </div>
-              <button class="collapsible">
-                В какое время можно заниматься?
-              </button>
-              <div class="faq__content">
-                <p>
-                  Мы работаем круглосуточно 7 дней в неделю и предлагаем более
-                  100 групп на выбор. Если ни одна из них не подходит, мы
-                  откроем новую группу, учитывая ваше расписание. Занятия
-                  проходят раз в неделю в удобное для вас время.
-                </p>
-              </div>
-              <button class="collapsible">
-                Это вебинар или онлайн-занятие?
-              </button>
-              <div class="faq__content">
-                <p>
-                  Все занятия проходят в режиме реального времени с
-                  преподавателем. Это не запись видеоурока.
-                </p>
-              </div>
-              <button class="collapsible">Как начать учиться?</button>
-              <div class="faq__content">
-                <p>
-                  Оставьте заявку на сайте. Мы поможем определить подходящие
-                  условия обучения, проведем пробный урок и подберем удобное
-                  время для занятий.
-                </p>
-              </div>
-              <button class="collapsible">Другие вопросы:</button>
-              <div class="faq__content">
-                <p>
-                  <strong>Что необходимо для начала занятий?</strong
-                  ><br />Ноутбук или компьютер. Мы предоставляем все материалы
-                  для уроков и помогаем с установкой программного
-                  обеспечения.<br /><br /><strong
-                    >На какой платформе проходят занятия?</strong
-                  ><br />Занятия проходят на нашей платформе в браузере Google
-                  Chrome. Планшета или телефона недостаточно, так как
-                  используются профессиональные программы.<br /><br /><strong
-                    >Что делать, если пропустил занятие?</strong
-                  ><br />Мы предоставляем записи занятий и организуем
-                  дополнительные уроки, чтобы вы могли догнать группу.<br /><br /><strong
-                    >Можно ли изменить график занятий?</strong
-                  ><br />Да, вы можете перейти в другую группу или на
-                  индивидуальное обучение в любое время.<br /><br /><strong
-                    >Сколько раз в неделю проходят занятия?</strong
-                  ><br />Занятия проходят 1 или 2 раза в неделю в зависимости от
-                  выбранного формата.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="reviews" id="reviews">
-          <h2 class="reviews__title">Отзывы наших студентов</h2>
-          <div class="swiper-par__btn">
-            <div class="swiper swiper-parent">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="swiper-slide__wrap">
-                    <div class="swiper-item__par">
-                      <div class="swiper__name">
-                        <img loading="lazy" src="/imgs/parent1.avif" alt="" />
-                        <div class="swiper__parent">
-                          <p>Алексей Иванов</p>
-                          <span>15 октября 2023 года</span>
-                        </div>
-                      </div>
-                      <p>
-                        Отличные курсы! Преподаватели объясняют все доступно и
-                        интересно. Уже после первых занятий смог создать
-                        небольшой проект. Рекомендую!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-slide__wrap">
-                    <div class="swiper-item__par">
-                      <div class="swiper__name">
-                        <img loading="lazy" src="/imgs/parent2.jpg" alt="" />
-                        <div class="swiper__parent">
-                          <p>Екатерина Смирнова</p>
-                          <span>10 октября 2023 года</span>
-                        </div>
-                      </div>
-                      <p>
-                        Мой ребенок в восторге от занятий! Вижу, как он увлечен
-                        и с каким интересом выполняет задания. Спасибо за
-                        качественное обучение!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-slide__wrap">
-                    <div class="swiper-item__par">
-                      <div class="swiper__name">
-                        <img loading="lazy" src="/imgs/parent3.jpg" alt="" />
-                        <div class="swiper__parent">
-                          <p>Дмитрий Петров</p>
-                          <span>5 октября 2023 года</span>
-                        </div>
-                      </div>
-                      <p>
-                        Курсы помогли мне освоить новые навыки, которые я уже
-                        применяю в работе. Преподаватели — настоящие
-                        профессионалы. Спасибо!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prev__par"></div>
-            <div class="next__par"></div>
-          </div>
-        </section>
-        <section class="about">
-          <div class="about__content">
-            <div class="about__img">
-              <img loading="lazy" src="/imgs/about.jpg" alt="" />
-            </div>
-            <div class="about__desk">
-              <div class="about__content_save">
-                <h3 class="about__title">О нас</h3>
-                <p class="about__text">
-                  Мы помогаем детям и взрослым освоить востребованные навыки в
-                  IT-сфере, чтобы они могли развиваться в профессии, менять
-                  карьеру или реализовывать свои проекты.
-                </p>
-              </div>
-              <div class="about__block_delete">
-                <h3 class="about__title">Наша миссия</h3>
-                <p class="about__text">
-                  Показать, что обучение может быть интересным, увлекательным и
-                  эффективным. Мы стремимся сделать образование доступным и
-                  качественным для всех.
-                </p>
-                <br />
-                <p class="about__text">
-                  Мы помогаем нашим студентам раскрыть потенциал, освоить новые
-                  технологии и достичь профессиональных целей. Обучение с нами —
-                  это инвестиция в ваше будущее!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="about__block_min">
-            <h3 class="about__title">Наша миссия</h3>
-            <p class="about__text">
-              Показать, что обучение может быть интересным, увлекательным и
-              эффективным. Мы стремимся сделать образование доступным и
-              качественным для всех.
-            </p>
-            <br />
-            <p class="about__text">
-              Мы помогаем нашим студентам раскрыть потенциал, освоить новые
-              технологии и достичь профессиональных целей. Обучение с нами — это
-              инвестиция в ваше будущее!
-            </p>
-          </div>
-        </section>
-        <section class="request" id="SignUp">
-          <div class="request__imgDesk">
-            <svg><use href="sprite.svg#request"></use></svg>
+      <section class="penchant"> <h3 class="penchant__title_dop"> Узнайте, есть ли у вас или вашего ребенка склонность к программированию </h3> <div class="penchant__wrap"> <div class="penchant__quote"> <span> "Стоит ли начинать изучать программирование? Как понять, есть ли способности? Ведь не каждый человек предрасположен к техническим специальностям и точным наукам." </span> </div> <div class="penchant__desk"> <h3> Узнайте, есть ли у вас или вашего ребенка склонность к программированию </h3> <p>Пройдите короткий тест, ответив на 12 вопросов</p> <a href="#" class="penchant__btn take-test">Пройти тест</a> </div> </div> </section> <div class="content"> <section class="answers" id="answers"> <h2 class="answers__title">Ответы на вопросы</h2> <div class="faq"> <div class="faq__item"> <button class="collapsible"> Как я смогу отследить прогресс? </button> <div class="faq__content"> <p> Занятия практические, и результат обучения — это конкретные проекты, которые создают участники. Преподаватель всегда на связи и каждые 8 уроков предоставляет персональный отчет по каждому ученику. </p> </div> <button class="collapsible"> В какое время можно заниматься? </button> <div class="faq__content"> <p> Мы работаем круглосуточно 7 дней в неделю и предлагаем более 100 групп на выбор. Если ни одна из них не подходит, мы откроем новую группу, учитывая ваше расписание. Занятия проходят раз в неделю в удобное для вас время. </p> </div> <button class="collapsible"> Это вебинар или онлайн-занятие? </button> <div class="faq__content"> <p> Все занятия проходят в режиме реального времени с преподавателем. Это не запись видеоурока. </p> </div> <button class="collapsible">Как начать учиться?</button> <div class="faq__content"> <p> Оставьте заявку на сайте. Мы поможем определить подходящие условия обучения, проведем пробный урок и подберем удобное время для занятий. </p> </div> <button class="collapsible">Другие вопросы:</button> <div class="faq__content"> <p> <strong>Что необходимо для начала занятий?</strong><br /> Ноутбук или компьютер. Мы предоставляем все материалы для уроков и помогаем с установкой программного обеспечения.<br /><br /> <strong>На какой платформе проходят занятия?</strong><br /> Занятия проходят на нашей платформе в браузере Google Chrome. Планшета или телефона недостаточно, так как используются профессиональные программы.<br /><br /> <strong>Что делать, если пропустил занятие?</strong><br /> Мы предоставляем записи занятий и организуем дополнительные уроки, чтобы вы могли догнать группу.<br /><br /> <strong>Можно ли изменить график занятий?</strong><br /> Да, вы можете перейти в другую группу или на индивидуальное обучение в любое время.<br /><br /> <strong>Сколько раз в неделю проходят занятия?</strong><br /> Занятия проходят 1 или 2 раза в неделю в зависимости от выбранного формата. </p> </div> </div> </div> </section> <section class="reviews" id="reviews"> <h2 class="reviews__title">Отзывы наших студентов</h2> <div class="swiper-par__btn"> <div class="swiper swiper-parent"> <div class="swiper-wrapper"> <div class="swiper-slide"> <div class="swiper-slide__wrap"> <div class="swiper-item__par"> <div class="swiper__name"> <img src="/imgs/parent.webp" alt="" /> <div class="swiper__parent"> <p>Алексей Иванов</p> <span>15 октября 2023 года</span> </div> </div> <p> Отличные курсы! Преподаватели объясняют все доступно и интересно. Уже после первых занятий смог создать небольшой проект. Рекомендую! </p> </div> </div> </div> <div class="swiper-slide"> <div class="swiper-slide__wrap"> <div class="swiper-item__par"> <div class="swiper__name"> <img src="/imgs/parent.webp" alt="" /> <div class="swiper__parent"> <p>Екатерина Смирнова</p> <span>10 октября 2023 года</span> </div> </div> <p> Мой ребенок в восторге от занятий! Вижу, как он увлечен и с каким интересом выполняет задания. Спасибо за качественное обучение! </p> </div> </div> </div> <div class="swiper-slide"> <div class="swiper-slide__wrap"> <div class="swiper-item__par"> <div class="swiper__name"> <img src="/imgs/parent.webp" alt="" /> <div class="swiper__parent"> <p>Дмитрий Петров</p> <span>5 октября 2023 года</span> </div> </div> <p> Курсы помогли мне освоить новые навыки, которые я уже применяю в работе. Преподаватели — настоящие профессионалы. Спасибо! </p> </div> </div> </div> </div> </div> <div class="prev__par"></div> <div class="next__par"></div> </div> </section> <section class="about"> <div class="about__content"> <div class="about__img"> <img src="/imgs/about.jpg" alt="" /> </div> <div class="about__desk"> <div class="about__content_save"> <h3 class="about__title">О нас</h3> <p class="about__text"> Мы помогаем детям и взрослым освоить востребованные навыки в IT-сфере, чтобы они могли развиваться в профессии, менять карьеру или реализовывать свои проекты. </p> </div> <div class="about__block_delete"> <h3 class="about__title">Наша миссия</h3> <p class="about__text"> Показать, что обучение может быть интересным, увлекательным и эффективным. Мы стремимся сделать образование доступным и качественным для всех. </p> <br /> <p class="about__text"> Мы помогаем нашим студентам раскрыть потенциал, освоить новые технологии и достичь профессиональных целей. Обучение с нами — это инвестиция в ваше будущее! </p> </div> </div> </div> <div class="about__block_min"> <h3 class="about__title">Наша миссия</h3> <p class="about__text"> Показать, что обучение может быть интересным, увлекательным и эффективным. Мы стремимся сделать образование доступным и качественным для всех. </p> <br /> <p class="about__text"> Мы помогаем нашим студентам раскрыть потенциал, освоить новые технологии и достичь профессиональных целей. Обучение с нами — это инвестиция в ваше будущее! </p> </div> </section> 
+      <section class="request" id="SignUp">
+        <div class="request__imgDesk">
+            <svg>
+                <use href="sprite.svg#request"></use>
+            </svg>
             <h2>Записаться на бесплатное занятие проще простого</h2>
-            <p>
-              Уже на первом занятии вы погрузитесь в азы программирования и
-              создадите небольшой проект, который вдохновит на дальнейшее
-              обучение!
-            </p>
-          </div>
-          <div class="request__form">
+            <p>Уже на первом занятии вы погрузитесь в азы программирования и создадите небольшой проект, который вдохновит на дальнейшее обучение!</p>
+        </div>
+        <div class="request__form">
             <h2>Оставьте заявку</h2>
-            <p class="request__desc">
-              и забронируйте место<br />на бесплатный урок
-            </p>
+            <p class="request__desc">и забронируйте место<br />на бесплатный урок</p>
             <form class="request__form-f" action="" method="post">
-              <label for="name">Как Вас зовут?</label>
-              <input type="text" id="name3" placeholder="Имя Фамилия" />
-              <label for="phone">Ваш номер телефона</label>
-              <input class="phone" type="tel" id="phone" name="request" />
-              <span class="phone__txt phone__txt_del"
-                >*Введите корректный номер телефона</span
-              >
-              <button class="request__btn submit-application" type="submit">
-                Оставить заявку
-              </button>
+                <label for="name">Как Вас зовут?</label>
+                <input type="text" id="name" placeholder="Имя Фамилия" />
+                <label for="phone">Ваш номер телефона</label>
+                <input class="phone" type="tel" id="phone" name="request" />
+                <span class="phone__txt phone__txt_del">*Введите корректный номер телефона</span>
+                <button class="request__btn submit-application" type="submit">Оставить заявку</button>
             </form>
             <p class="request__txt">
-              Нажимая на кнопку, вы даете согласие на обработку персональных
-              данных и соглашаетесь c<a href="#"
-                >политикой конфиденциальности</a
-              >
+                Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c
+                <a href="#">политикой конфиденциальности</a>
             </p>
-          </div>
-        </section>
-      </div>
-      <section class="contacts" id="contacts">
-        <div class="contacts__container">
-          <h2>Наши контакты</h2>
-          <p>
-            Свяжитесь с нами, чтобы узнать больше о курсе или записаться на
-            бесплатное занятие!
-          </p>
-          <div class="contacts__info">
-            <div class="contacts__item">
-              <svg class="contacts__icon">
-                <use href="sprite.svg#phone"></use>
-              </svg>
-              <div class="contacts__details">
-                <p class="contacts__label">Телефон:</p>
-                <p>
-                  <a href="tel:+79991234567">+7 (999) 123-45-67</a><br />
-                  <a href="tel:+79997654321">+7 (999) 765-43-21</a>
-                </p>
-              </div>
-            </div>
-            <div class="contacts__item">
-              <svg class="contacts__icon">
-                <use href="sprite.svg#email"></use>
-              </svg>
-              <div class="contacts__details">
-                <p class="contacts__label">Email:</p>
-                <p>
-                  <a href="mailto:easycode@gmail.com">easycode@gmail.com</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <a href="/#SignUp" class="pulse-btn-SignUp">Записаться</a>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="footer-container">
-          <a class="navbar-logo" href="/">EasyCode</a>
-          <div class="footer-column">
-            <ul class="footer-menu">
-              <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
-              <li><a href="tel:+79997654321">+7 (999) 765-43-21</a></li>
-              <li>
-                <a href="mailto:easycode@gmail.com">easycode@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <ul class="footer-menu">
-              <li><a href="/">Главная</a></li>
-              <li><a href="/html/about.html">О нас</a></li>
-              <li><a href="/index.html#contacts">Контакты</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </main>
+    </section>
 
+    </div>
+<section class="contacts" id="contacts">
+  <div class="contacts__container">
+      <h2>Наши контакты</h2>
+      <p>Свяжитесь с нами, чтобы узнать больше о курсе или записаться на бесплатное занятие!</p>
+      <div class="contacts__info">
+          <div class="contacts__item">
+              <svg class="contacts__icon">
+                  <use href="sprite.svg#phone"></use>
+              </svg>
+              <div class="contacts__details">
+                  <p class="contacts__label">Телефон:</p>
+                  <p>
+                      <a href="tel:+79991234567">+7 (999) 123-45-67</a><br />
+                      <a href="tel:+79997654321">+7 (999) 765-43-21</a>
+                  </p>
+              </div>
+          </div>
+          <div class="contacts__item">
+              <svg class="contacts__icon">
+                  <use href="sprite.svg#email"></use>
+              </svg>
+              <div class="contacts__details">
+                  <p class="contacts__label">Email:</p>
+                  <p><a href="mailto:easycode@gmail.com">easycode@gmail.com</a></p>
+              </div>
+          </div>
+      </div>
+      <a href="/#SignUp" class="pulse-btn-SignUp">Записаться</a>
+  </div>
+</section><footer>
+  <div class="footer-container">
+    <a class="navbar-logo" href="/">EasyCode</a>
+    <div class="footer-column">
+      <ul class="footer-menu">
+        <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+        <li><a href="tel:+79997654321">+7 (999) 765-43-21</a></li>
+        <li><a href="mailto:easycode@gmail.com">easycode@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <ul class="footer-menu">
+        <li><a href="/">Главная</a></li>
+        <li><a href="/html/about.html">О нас</a></li>
+        <li><a href="/index.html#contacts">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    
+      </main>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
+    <script defer>
       const swiper = new Swiper(".swiper-prepod", {
         navigation: {
           nextEl: ".next",
@@ -1405,9 +900,9 @@
           "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
       });
     </script>
-    <script defer src="script/script.js"></script>
-    <script defer src="script/submitApplication.js"></script>
-    <script defer src="script/trialLesson.js"></script>
-    <script defer src="script/takeTest.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/submitApplication.js"></script>
+    <script src="script/trialLesson.js"></script>
+    <script src="script/takeTest.js"></script>
   </body>
 </html>
